@@ -4,10 +4,10 @@ import MainCardPhoto from "./MainCardPhoto";
 
 export default function CardKnowHow() {
   return (
-    <div className="flex flex-col gap-4 my-20">
-      <h1 className="text-3xl tracking-tighter leading-normal text-black/70">
+    <div className="flex flex-col gap-4 my-60">
+      <h1 className="text-2xl md:text-3xl lg:text-4xl tracking-tighter leading-normal text-black/70">
         기술은 따라 할 수 있어도 <br />
-        <b className="text-black">
+        <b className="text-black break-keep leading-normal">
           숙련된 기술자의 <strong className="text-red-500">깊은 노하우</strong>
           는 경쟁의 산물입니다
         </b>

@@ -4,11 +4,11 @@ import MultiCarousel from "./MultiCarousel";
 export default function CarouselSolution() {
   return (
     <div className="my-20">
-      <h1 className="text-3xl font-bold tracking-tight leading-normal">
+      <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight">
         Integrated
         <strong className="text-red-500"> IoT</strong> Solution
       </h1>
-      <p className="break-keep w-4/6 tracking-tight text-xl leading-normal text-black/70">
+      <p className="break-keep w-full lg:w-4/6 tracking-tight md:text-lg lg:text-xl mt-2 leading-normal text-black/70">
         <strong className="font-medium text-red-500">아이티로그</strong>는 오랜
         경력으로 쌓아온 노하우로 S/W 서비스, H/W 서비스, Web 서비스 그리고 높은
         수준의 기술력과 전문성으로
