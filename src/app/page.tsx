@@ -2,6 +2,8 @@ import MainFull from "@/components/MainFull";
 import BodyWrapper from "@/components/BodyWrapper";
 import CardKnowHow from "@/components/CardKnowHow";
 import CarouselSolution from "@/components/CarouselSolution";
+import IconLabel from "@/components/IconLabel";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -10,6 +12,45 @@ export default function Home() {
       <BodyWrapper>
         <CardKnowHow />
         <CarouselSolution />
+        <div className="relative bg-emerald-50 rounded-2xl p-20 my-60 flex justify-between items-center gap-8 overflow-hidden">
+          <div className="relative flex flex-col w-3/5 z-20">
+            <h3 className="font-bold text-2xl tracking-tight text-red-500 mb-20">
+              높은 보안성과 효율성
+            </h3>
+            <h1 className="font-bold text-4xl tracking-tight mb-4">
+              출입통제 시스템
+            </h1>
+            <p className="text-lg tracking-tight break-keep leading-normal text-black/70 mb-16">
+              출입통제 시스템은 실시간으로 작업자의 출입 기록을 관리하고,
+              비인가자의 출입을 차단함으로써 작업자들의 안전을 보호합니다.
+              현장의 보안 관리와 작업자들의 안전까지 예방하고 보호할 수
+              있습니다.
+            </p>
+            <button className="w-fit bg-white hover:bg-red-500 hover:text-white font-medium text-slate-600 hover:ring-0 h-12 px-8 rounded-full drop-shadow-2xl tracking-tight">
+              더 알아보기
+            </button>
+          </div>
+          <div className="flex gap-4 z-20 pb-8">
+            <IconLabel
+              icon={"/icons/face-id.png"}
+              iconLabel={"안면인식 시스템"}
+              iconCss={""}
+            />
+            <IconLabel
+              icon={"/icons/parking.png"}
+              iconLabel={"차량통제 시스템"}
+              iconCss={""}
+            />
+          </div>
+          <Image
+            src={"/images/focusGreen.png"}
+            alt=""
+            // fill
+            width={420}
+            height={420}
+            className="absolute -right-0 z-10"
+          />
+        </div>
         <div className="h-[1000px]" />
       </BodyWrapper>
       {/* <div className="hidden">
