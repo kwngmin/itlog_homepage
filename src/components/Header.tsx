@@ -6,11 +6,11 @@ export default function Header() {
     <div className="flex-none flex justify-center border-b z-20">
       <div className="flex items-center px-4 md:px-6 xl:px-8 w-[1536px] justify-between h-[72px]">
         <Image
-          src="/logos/itlog.svg"
+          src="/itlog.svg"
           alt="itlog Logo"
-          className="dark:invert"
-          width={88}
-          height={20}
+          className="dark:invert h-12 w-auto"
+          width={10}
+          height={10}
           priority
         />
         <ul className="flex items-center gap-1 tracking-tight">
@@ -32,7 +32,7 @@ export default function Header() {
         </ul>
         <div>
           <div className="flex gap-2">
-            <button className="h-[44px] px-4 rounded-md hover:bg-gray-200">
+            <button className="h-[44px] px-4 rounded-md text-red-600 bg-red-100 hover:bg-red-200">
               원격지원
             </button>
             <button className="bg-red-500 hover:bg-red-600 h-[44px] px-4 text-white rounded-md">

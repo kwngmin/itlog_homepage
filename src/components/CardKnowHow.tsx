@@ -1,0 +1,50 @@
+import React from "react";
+import MainCardIcon from "./MainCardIcon";
+import MainCardPhoto from "./MainCardPhoto";
+
+export default function CardKnowHow() {
+  return (
+    <div className="flex flex-col gap-4 my-20">
+      <h1 className="text-3xl tracking-tighter leading-normal text-black/70">
+        기술은 따라 할 수 있어도 <br />
+        <b className="text-black">
+          숙련된 기술자의 <strong className="text-red-500">깊은 노하우</strong>
+          는 경쟁의 산물입니다
+        </b>
+      </h1>
+      <div className="w-full grid grid-cols-2 md:grid-cols-3 gap-4 ">
+        <MainCardPhoto dataRoute={"/images/merit1.jpg"} />
+        <MainCardIcon
+          cardIcon={"/icons/hammer.png"}
+          cardNum={3000}
+          cardText={"설치시공 횟수"}
+          iconCss={"p-4"}
+          colStart={"flex"}
+        />
+        <MainCardIcon
+          cardIcon={"/icons/idea.png"}
+          cardNum={13}
+          cardText={"연구개발 경력"}
+          iconCss={"p-4"}
+          colStart={"flex md:hidden"}
+        />
+        <MainCardPhoto dataRoute={"/images/merit2.jpg"} />
+        <MainCardIcon
+          cardIcon={"/icons/idea.png"}
+          cardNum={13}
+          cardText={"연구개발 경력"}
+          iconCss={"p-4"}
+          colStart={"hidden md:flex "}
+        />
+        <MainCardPhoto dataRoute={"/images/merit3.jpg"} />
+        <MainCardIcon
+          cardIcon={"/icons/handshake.png"}
+          cardNum={62}
+          cardText={"공급고객사"}
+          iconCss={"p-2"}
+          colStart={"flex"}
+        />
+      </div>
+    </div>
+  );
+}

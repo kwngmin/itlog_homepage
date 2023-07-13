@@ -1,69 +1,27 @@
-import Header from "@/components/Header";
-import Image from "next/image";
-import { Children } from "react";
 import MainFull from "@/components/MainFull";
-import MainWrapper from "@/components/MainWrapper";
 import BodyWrapper from "@/components/BodyWrapper";
+import CardKnowHow from "@/components/CardKnowHow";
+import CarouselSolution from "@/components/CarouselSolution";
 
 export default function Home() {
   return (
-    <section className="flex flex-col h-screen">
-      <Header />
-      <MainWrapper>
-        <MainFull />
-        <BodyWrapper>
-          <div className="w-full bg-green-100">
-            <p>
-              기술은 따라 할 수 있어도 <br />
-              숙련된 기술자의 깊은 노하우는 경쟁의 산물입니다
-            </p>
-            <div className="grid grid-cols-3 gap-4">
-              <Image
-                src="/images/merit1.jpg"
-                alt="itlog Logo"
-                width={320}
-                height={280}
-                className="overflow-hidden rounded-xl"
-              />
-              <Image
-                src="/images/merit1.jpg"
-                alt="itlog Logo"
-                width={320}
-                height={280}
-                className="overflow-hidden rounded-xl"
-              />{" "}
-              <Image
-                src="/images/merit1.jpg"
-                alt="itlog Logo"
-                width={320}
-                height={280}
-                className="overflow-hidden rounded-xl"
-              />{" "}
-              <Image
-                src="/images/merit1.jpg"
-                alt="itlog Logo"
-                width={320}
-                height={280}
-                className="overflow-hidden rounded-xl"
-              />{" "}
-              <Image
-                src="/images/merit1.jpg"
-                alt="itlog Logo"
-                width={320}
-                height={280}
-                className="overflow-hidden rounded-xl"
-              />
-              <div>
-                <div>아이콘</div>
-                <span>
-                  설치시공 횟수 <strong>3000+</strong>
-                </span>
-              </div>
-            </div>
-          </div>
-        </BodyWrapper>
-      </MainWrapper>
-    </section>
+    <>
+      <MainFull />
+      <BodyWrapper>
+        <CardKnowHow />
+        <CarouselSolution />
+        <div className="h-[1000px]" />
+      </BodyWrapper>
+      {/* <div className="hidden">
+          <h1 className="text-3xl tracking-tighter leading-normal">
+            건설안전관리 파트너 <br />
+            <b>
+              아이티로그의
+              <strong className="text-red-500">주요 고객사</strong>
+            </b>
+          </h1>
+        </div> */}
+    </>
   );
 }
 // <main className="flex min-h-screen flex-col items-center justify-between p-24">
