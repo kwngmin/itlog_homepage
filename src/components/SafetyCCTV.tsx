@@ -46,7 +46,7 @@ export default function SafetyCCTV() {
         alt=""
         width={420}
         height={420}
-        className="absolute -translate-y-1/2 top-28 sm:top-32 md:top-1/2 md:-translate-y-1/2 md:-left-20 lg:-left-40 w-3/4 sm:w-[420px] md:w-[440px] lg:w-[600px]"
+        className="absolute -translate-y-1/2 top-24 sm:top-32 md:top-1/2 md:-translate-y-1/2 md:-left-20 lg:-left-40 w-3/4 sm:w-[420px] md:w-[440px] lg:w-[600px]"
       />
     </div>
   );
