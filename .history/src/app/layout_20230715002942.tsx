@@ -14,12 +14,12 @@ const spoqaHanSans = localFont({
       style: "bold",
     },
     {
-      path: "../../public/fonts/SpoqaHanSansNeo-Medium.woff2",
+      path: "./fonts/SpoqaHanSansNeo-Medium.woff2",
       weight: "500",
       style: "medium",
     },
     {
-      path: "../../public/fonts/SpoqaHanSansNeo-Regular.woff2",
+      path: "./fonts/SpoqaHanSansNeo-Regular.woff2",
       weight: "400",
       style: "normal",
     },
