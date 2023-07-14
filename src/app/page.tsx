@@ -13,24 +13,36 @@ export default function Home() {
         <CardKnowHow />
         <CarouselSolution />
         <div className="relative bg-slate-100 sm:bg-sky-100 md:bg-red-100 lg:bg-emerald-200 xl:bg-orange-100 rounded-2xl p-6 sm:p-8 md:p-12 lg:p-16 xl:p-20 my-60 flex flex-col md:flex-row justify-between items-start md:items-center gap-10 overflow-hidden">
-          <div className="relative flex flex-col md:w-1/2 z-20">
-            <h3 className="font-bold text-xl md:text-2xl tracking-tight text-red-500 mb-4 sm:mb-8 md:mb-20">
+          <div className="relative flex flex-col sm:w-4/5 md:w-2/3 lg:w-1/2 z-20">
+            <h3 className="font-bold text-xl lg:text-2xl tracking-tight text-red-500 my-8 md:mt-0 md:mb-12 lg:mb-16">
               높은 보안성과 효율성
             </h3>
             <h1 className="font-bold text-3xl md:text-4xl tracking-tight mb-4">
               출입통제 시스템
             </h1>
-            <p className="md:text-lg md:leading-normal lg:text-xl lg:leading-normal tracking-tight break-keep text-black/70 mb-8 md:mb-16">
+            <p className="sm:text-lg sm:leading-normal md:text-xl md:leading-normal tracking-tighter break-keep text-black/70 mb-12 lg:mb-16">
               출입통제 시스템은 실시간으로 작업자의 출입 기록을 관리하고,
               비인가자의 출입을 차단함으로써 작업자들의 안전을 보호합니다.
               현장의 보안 관리와 작업자들의 안전까지 예방하고 보호할 수
               있습니다.
             </p>
+            <div className="hidden flex-none flex lg:hidden gap-2 sm:gap-3 z-20 mb-8">
+              <IconLabel
+                icon={"/icons/face-id.png"}
+                iconLabel={"안면인식 시스템"}
+                iconCss={""}
+              />
+              <IconLabel
+                icon={"/icons/parking.png"}
+                iconLabel={"차량통제 시스템"}
+                iconCss={""}
+              />
+            </div>
             <button className="w-fit bg-white hover:bg-red-500 hover:text-white font-medium text-slate-600 hover:ring-0 h-12 px-8 rounded-full drop-shadow-2xl tracking-tight">
               더 알아보기
             </button>
           </div>
-          <div className="flex-none flex gap-4 z-20 px-12 sm:px-16 md:px-8 py-16 sm:py-24 md:py-0 order-first md:order-last">
+          <div className="flex-none hidden lg:flex gap-4 z-20 md:px-8 order-first md:order-last">
             <IconLabel
               icon={"/icons/face-id.png"}
               iconLabel={"안면인식 시스템"}
@@ -47,7 +59,7 @@ export default function Home() {
             alt=""
             width={420}
             height={420}
-            className="absolute top-4 sm:top-10 md:top-1/2 md:-translate-y-1/2 md:right-4 lg:right-6 xl:right-8 md:mt-3 w-[256px] sm:w-[320px] md:w-[360px] lg:w-[420px]"
+            className="absolute top-1/2 -translate-y-1/2 mt-3 -right-56 md:-right-48 lg:right-6 xl:right-8 w-[360px] md:w-[420px]"
           />
         </div>
         <div className="h-[1000px]" />
