@@ -21,9 +21,9 @@ export default function MainCardIcon({
       <Image
         src={cardIcon}
         alt="itlog Logo"
-        width={80}
-        height={80}
-        className={`${iconCss} drop-shadow-2xl`}
+        width={100}
+        height={100}
+        className={`${iconCss} w-2/5 md:w-full drop-shadow-2xl`}
       />
       <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold tracking-wide text-white leading-tight">
         {cardNum}
