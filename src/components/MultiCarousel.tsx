@@ -6,7 +6,7 @@ import CarouselBtn from "@/components/CarouselBtn";
 export default function MultiCarousel() {
   return (
     <>
-      <div className="lg:hidden relative my-4 bg-black rounded-2xl overflow-hidden h-56 flex flex-col justify-center">
+      <div className="lg:hidden relative my-4 bg-black rounded-2xl overflow-hidden h-56 md:h-64 flex flex-col justify-center">
         <Image
           alt="itlog Logo"
           src={"/images/sideFace.png"}
@@ -15,7 +15,7 @@ export default function MultiCarousel() {
           className="absolute -right-40 object-cover z-20 mix-blend-lighten h-full"
         />
         <div className="relative z-10 mx-6 sm:mx-12 md:ml-20">
-          <h3 className="text-2xl md:text-3xl font-bold mb-4 sm:mb-6 md:mb-10 tracking-tight text-white">
+          <h3 className="text-2xl md:text-3xl font-bold mb-4 sm:mb-4 md:mb-6 tracking-tight text-white">
             Deep Learning
           </h3>
           <p className="w-full md:w-4/6 font-normal break-keep leading-relaxed tracking-tight text-white/80">
@@ -32,7 +32,7 @@ export default function MultiCarousel() {
           className="object-cover object-right-top"
         />
       </div>
-      <div className="hidden lg:flex py-4 md:py-8 my-4  bg-slate-100 border border-slate-300 rounded-2xl flex gap-2 sm:gap-3 md:gap-4">
+      <div className="hidden lg:flex py-4 md:py-8 my-4  bg-slate-100 border border-slate-300 rounded-2xl gap-2 sm:gap-3 md:gap-4">
         <div className="relative overflow-hidden w-20 rounded-r-xl bg-gradient-to-b from-slate-800 to-blue-800" />
         <div className="relative  bg-black rounded-2xl overflow-hidden h-72 flex flex-col justify-center">
           <Image
