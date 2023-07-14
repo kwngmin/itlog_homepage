@@ -23,15 +23,13 @@ export default function MainCardIcon({
         alt="itlog Logo"
         width={100}
         height={100}
-        className={`${iconCss} w-2/5 md:w-full drop-shadow-2xl`}
+        className={`${iconCss} w-2/5 md:w-1/3 drop-shadow-2xl`}
       />
-      <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold tracking-wide text-white leading-tight">
+      <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold tracking-wide text-white leading-tight">
         {cardNum}
         <span className="font-normal text-white/70">+</span>
       </h2>
-      <span className="text-sm md:text-xl tracking-tight text-yellow-200">
-        {cardText}
-      </span>
+      <span className="text-xl tracking-tight text-yellow-200">{cardText}</span>
     </div>
   );
 }

@@ -18,6 +18,7 @@ export default function CarouselSolution() {
         을 제공합니다.
       </p>
       <MultiCarousel />
+
       {/* <CarouselBanner
           bannerTitle={"BigData"}
           bannerText={
