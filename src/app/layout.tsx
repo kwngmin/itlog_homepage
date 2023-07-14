@@ -5,22 +5,21 @@ import MainWrapper from "@/components/MainWrapper";
 import localFont from "next/font/local";
 
 // import { Inter } from "next/font/google";
-
 // const inter = Inter({ subsets: ["latin"] });
 const spoqaHanSans = localFont({
   src: [
     {
-      path: "./SpoqaHanSansNeo-Bold.woff2",
+      path: "../fonts/SpoqaHanSansNeo-Bold.woff2",
       weight: "700",
       style: "bold",
     },
     {
-      path: "./SpoqaHanSansNeo-Medium.woff2",
+      path: "../fonts/SpoqaHanSansNeo-Medium.woff2",
       weight: "500",
       style: "medium",
     },
     {
-      path: "./SpoqaHanSansNeo-Regular.woff2",
+      path: "../fonts/SpoqaHanSansNeo-Regular.woff2",
       weight: "400",
       style: "normal",
     },
@@ -38,8 +37,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="ko">
-      <body className={`${spoqaHanSans.className} flex flex-col h-screen`}>
+    <html lang="ko" className={spoqaHanSans.className}>
+      <body className={`flex flex-col h-screen`}>
         <Header />
         <MainWrapper>{children}</MainWrapper>
       </body>
