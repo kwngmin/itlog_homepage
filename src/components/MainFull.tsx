@@ -15,7 +15,7 @@ export default function MainFull() {
         <h1 className="hidden md:flex text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tighter mb-2 md:mb-3 lg:mb-4 xl:mb-5 break-keep">
           건설은 안전하게 안전은 스마트하게
         </h1>
-        <h1 className="md:hidden leading-normal text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tighter mb-2 md:mb-3 lg:mb-4 xl:mb-5 break-keep">
+        <h1 className="md:hidden leading-tight text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tighter mb-2 md:mb-3 lg:mb-4 xl:mb-5 break-keep">
           건설은 안전하게
           <br />
           안전은 스마트하게

@@ -4,7 +4,7 @@ import MultiCarousel from "./MultiCarousel";
 export default function CarouselSolution() {
   return (
     <div className="my-20">
-      <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight">
+      <h1 className="leading-tight break-keep text-3xl lg:text-4xl font-bold tracking-tight">
         Integrated
         <strong className="text-red-500"> IoT</strong> Solution
       </h1>

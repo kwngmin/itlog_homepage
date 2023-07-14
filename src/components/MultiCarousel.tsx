@@ -16,11 +16,11 @@ export default function MultiCarousel() {
             height={640}
             className="absolute -right-40 object-cover z-20 mix-blend-lighten h-full"
           />
-          <div className="relative z-10 ml-20">
-            <h3 className="text-3xl font-bold mb-10 tracking-tight text-white">
+          <div className="relative z-10 mx-6 sm:mx-12 md:ml-20">
+            <h3 className="text-2xl md:text-3xl font-bold mb-4 sm:mb-6 md:mb-10 tracking-tight text-white">
               Deep Learning
             </h3>
-            <p className="w-4/6 font-normal break-keep text-md leading-relaxed tracking-tight text-white/70">
+            <p className="w-full md:w-4/6 font-normal break-keep leading-relaxed tracking-tight text-white/80">
               회귀분석을 통하여 예측할 수 없는 안전사고까지도 추적할 수 있을
               때까지 Deep Mining과 Deep Learning의 가치를 높여 나갑니다.
               가상현실(VR)이나 증강현실(AR) 기술과 결합하여 안전 교육 및 학습을
@@ -36,7 +36,7 @@ export default function MultiCarousel() {
         </div>
         <div className="relative overflow-hidden w-20 rounded-l-xl bg-gradient-to-b from-cyan-800 to-slate-800" />
       </div>
-      <div className="flex gap-3 bg-slate-200 rounded-full overflow-hidden overflow-x-auto">
+      <div className="flex gap-3 bg-red-50 rounded-full overflow-hidden overflow-x-auto">
         <button className="bg-red-500 hover:bg-red-600 text-white font-medium px-6 rounded-full h-12">
           BigData
         </button>
