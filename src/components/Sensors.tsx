@@ -5,7 +5,7 @@ import SolutionBannerBtn from "./SolutionBannerBtn";
 
 export default function Sensors() {
   return (
-    <div className="relative bg-sky-50 rounded-2xl p-6 sm:p-8 md:p-12 lg:p-16 xl:p-20 my-60 flex flex-col md:flex-row justify-between items-center gap-8 md:gap-24 overflow-hidden">
+    <div className="relative bg-sky-50 rounded-2xl p-6 sm:p-8 md:p-12 lg:px-16 md:py-28 xl:px-20 my-60 flex flex-col md:flex-row justify-between items-center gap-8 md:gap-24 overflow-hidden">
       <div className="relative flex flex-col sm:w-4/5 md:w-2/3 z-20">
         <h3 className="font-bold text-xl lg:text-2xl tracking-tight text-red-500 mb-8 md:mt-0 md:mb-12 lg:mb-16">
           극한 환경에서도 뛰어난 성능

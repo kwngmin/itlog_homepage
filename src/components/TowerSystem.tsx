@@ -5,7 +5,7 @@ import SolutionBannerBtn from "./SolutionBannerBtn";
 
 export default function TowerSystem() {
   return (
-    <div className="relative bg-red-50 rounded-2xl p-6 sm:p-8 md:p-12 lg:p-16 xl:py-20 my-60 flex flex-col md:flex-row justify-between items-center gap-8 md:gap-24 overflow-hidden">
+    <div className="relative bg-red-50 rounded-2xl p-6 sm:p-8 md:p-12 lg:px-16 md:py-28 xl:px-20 my-60 flex flex-col md:flex-row justify-between items-center gap-8 md:gap-24 overflow-hidden">
       <div className="flex-none grid grid-cols-4 md:grid-cols-2 gap-4 z-20 py-16 md:py-0 sm:py-24">
         <IconLabel
           icon={"/icons/cam.png"}
@@ -47,7 +47,7 @@ export default function TowerSystem() {
         alt=""
         width={420}
         height={420}
-        className="hidden md:flex absolute md:-left-14 lg:-left-20 md:-top-12 xl: w-[640px] md:w-[400px] lg:w-[520px]"
+        className="hidden md:flex absolute md:-left-12 lg:-left-20 md:top-20 lg:-top-12 xl: w-[640px] md:w-[380px] lg:w-[520px]"
       />
       <Image
         src={"/images/crane-small.png"}

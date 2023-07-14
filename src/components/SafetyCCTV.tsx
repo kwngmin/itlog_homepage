@@ -5,7 +5,7 @@ import SolutionBannerBtn from "./SolutionBannerBtn";
 
 export default function SafetyCCTV() {
   return (
-    <div className="relative bg-yellow-50 rounded-2xl p-6 sm:p-8 md:p-12 lg:p-16 xl:py-20 my-60 flex flex-col md:flex-row justify-between items-center gap-8 md:gap-24 overflow-hidden">
+    <div className="relative bg-yellow-50 rounded-2xl p-6 sm:p-8 md:p-12 lg:px-16 md:py-28 xl:px-20 my-60 flex flex-col md:flex-row justify-between items-center gap-8 md:gap-24 overflow-hidden">
       <div className="flex-none flex flex-row md:flex-col gap-4 z-20 py-16 md:py-0 sm:py-24 items-center">
         <div className="flex-none w-fit">
           <IconLabel
