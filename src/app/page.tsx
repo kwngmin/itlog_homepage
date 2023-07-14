@@ -12,15 +12,15 @@ export default function Home() {
       <BodyWrapper>
         <CardKnowHow />
         <CarouselSolution />
-        <div className="relative bg-emerald-50 rounded-2xl p-20 my-60 flex justify-between items-center gap-8 overflow-hidden">
-          <div className="relative flex flex-col w-3/5 z-20">
-            <h3 className="font-bold text-2xl tracking-tight text-red-500 mb-20">
+        <div className="relative bg-slate-100 sm:bg-sky-100 md:bg-red-100 lg:bg-emerald-200 xl:bg-orange-100 rounded-2xl p-8 md:p-12 lg:p-16 xl:p-20 my-60 flex flex-col md:flex-row justify-between items-start md:items-center gap-10 overflow-hidden">
+          <div className="relative flex flex-col md:w-1/2 z-20">
+            <h3 className="font-bold text-2xl tracking-tight text-red-500 mb-8 md:mb-20">
               높은 보안성과 효율성
             </h3>
             <h1 className="font-bold text-4xl tracking-tight mb-4">
               출입통제 시스템
             </h1>
-            <p className="text-lg tracking-tight break-keep leading-normal text-black/70 mb-16">
+            <p className="md:text-lg md:leading-normal lg:text-xl lg:leading-normal tracking-tight break-keep text-black/70 mb-8 md:mb-16">
               출입통제 시스템은 실시간으로 작업자의 출입 기록을 관리하고,
               비인가자의 출입을 차단함으로써 작업자들의 안전을 보호합니다.
               현장의 보안 관리와 작업자들의 안전까지 예방하고 보호할 수
@@ -30,7 +30,7 @@ export default function Home() {
               더 알아보기
             </button>
           </div>
-          <div className="flex gap-4 z-20 pb-8">
+          <div className="flex-none flex gap-4 z-20 px-16 md:px-8 py-24 md:py-0 order-first md:order-last">
             <IconLabel
               icon={"/icons/face-id.png"}
               iconLabel={"안면인식 시스템"}
@@ -45,10 +45,9 @@ export default function Home() {
           <Image
             src={"/images/focusGreen.png"}
             alt=""
-            // fill
             width={420}
             height={420}
-            className="absolute -right-0 z-10"
+            className="absolute md:right-4 lg:right-6 xl:right-8 md:mt-4 lg:mt-8 w-[360px] md:w-[360px] lg:w-[420px]"
           />
         </div>
         <div className="h-[1000px]" />
