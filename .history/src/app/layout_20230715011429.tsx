@@ -38,6 +38,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ko" className={spoqaHanSans.className}>
+    {/* // <html lang="ko"> */}
       <body className={`flex flex-col h-screen`}>
         <Header />
         <MainWrapper>{children}</MainWrapper>
