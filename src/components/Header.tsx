@@ -32,7 +32,7 @@ export default function Header() {
         </ul>
         <div>
           <div className="flex gap-2">
-            <button className="h-[44px] px-4 rounded-md text-red-600 bg-red-100 hover:bg-red-200">
+            <button className="h-[44px] px-4 rounded-md text-white bg-slate-700 md:hover:bg-slate-600">
               원격지원
             </button>
             <button className="bg-red-500 hover:bg-red-600 h-[44px] px-4 text-white rounded-md">

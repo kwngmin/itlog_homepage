@@ -6,7 +6,7 @@ import CarouselBtn from "@/components/CarouselBtn";
 export default function MultiCarousel() {
   return (
     <>
-      <div className="py-8 my-4  bg-slate-100 border border-slate-300 rounded-2xl flex gap-6">
+      <div className="py-4 md:py-8 my-4  bg-slate-100 border border-slate-300 rounded-2xl flex gap-2 sm:gap-4 md:gap-6">
         <div className="relative overflow-hidden w-20 rounded-r-xl bg-gradient-to-b from-slate-800 to-blue-800" />
         <div className="relative  bg-black rounded-2xl overflow-hidden h-72 flex flex-col justify-center">
           <Image
@@ -36,7 +36,7 @@ export default function MultiCarousel() {
         </div>
         <div className="relative overflow-hidden w-20 rounded-l-xl bg-gradient-to-b from-cyan-800 to-slate-800" />
       </div>
-      <div className="flex gap-3">
+      <div className="flex gap-3 bg-slate-200 rounded-full overflow-hidden overflow-x-auto">
         <button className="bg-red-500 hover:bg-red-600 text-white font-medium px-6 rounded-full h-12">
           BigData
         </button>
