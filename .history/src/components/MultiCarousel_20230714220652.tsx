@@ -62,7 +62,7 @@ export default function MultiCarousel() {
         </div>
         <div className="relative overflow-hidden w-20 rounded-l-xl bg-gradient-to-b from-cyan-800 to-slate-800" />
       </div>
-      <div className="flex gap-3 bg-red-50 md:bg-transparent rounded-full overflow-hidden overflow-x-auto">
+      <div className="flex gap-3 bg-red-50 bg-transparent rounded-full overflow-hidden overflow-x-auto">
         <button className="bg-red-500 hover:bg-red-600 text-white font-medium px-6 rounded-full h-12">
           BigData
         </button>

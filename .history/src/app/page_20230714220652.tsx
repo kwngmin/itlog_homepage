@@ -20,7 +20,7 @@ export default function Home() {
         <Sensors />
         <SafetyCCTV />
         <BroadCast />
-        {/* <div className="h-[1000px]" /> */}
+        <div className="h-[1000px]" />
       </BodyWrapper>
       {/* <div className="hidden">
           <h1 className="text-3xl tracking-tighter leading-normal">

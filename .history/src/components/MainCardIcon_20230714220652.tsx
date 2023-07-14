@@ -18,18 +18,18 @@ export default function MainCardIcon({
     <div
       className={`${colStart} overflow-hidden rounded-xl aspect-4/3 bg-red-500 flex-col justify-center items-center drop-shadow-2xl`}
     >
-      {/* <Image
+      <Image
         src={cardIcon}
         alt="itlog Logo"
         width={100}
         height={100}
         className={`${iconCss} w-2/5 md:w-1/3 drop-shadow-2xl`}
-      /> */}
-      <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-wide text-white my-2">
+      />
+      <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold tracking-wide text-white leading-tight">
         {cardNum}
-        <span className="font-normal text-white/70"></span>
+        <span className="font-normal text-white/70">+</span>
       </h2>
-      <span className="text-xl sm:text-2xl tracking-tight text-white/70">{cardText}</span>
+      <span className="text-xl tracking-tight text-yellow-200">{cardText}</span>
     </div>
   );
 }

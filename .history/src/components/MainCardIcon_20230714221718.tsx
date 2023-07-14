@@ -25,7 +25,7 @@ export default function MainCardIcon({
         height={100}
         className={`${iconCss} w-2/5 md:w-1/3 drop-shadow-2xl`}
       /> */}
-      <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-wide text-white my-2">
+      <h2 className="text-4xl sm:text-5xl font-bold tracking-wide text-white leading-tight">
         {cardNum}
         <span className="font-normal text-white/70"></span>
       </h2>

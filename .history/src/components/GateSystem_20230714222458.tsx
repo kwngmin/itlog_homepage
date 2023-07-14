@@ -5,7 +5,7 @@ import SolutionBannerBtn from "./SolutionBannerBtn";
 
 export default function GateSystem() {
   return (
-    <div className="relative bg-emerald-50 rounded-2xl p-6 sm:py-20 md:px-12 lg:px-16 md:py-16 lg:py-20 xl:px-20 my-60 flex flex-col md:flex-row justify-between items-center gap-8 md:gap-24 overflow-hidden">
+    <div className="relative bg-emerald-50 rounded-2xl p-6 sm:p-8 md:px-12 lg:px-16 md:py-20 xl:px-20 my-60 flex flex-col md:flex-row justify-between items-center gap-8 md:gap-24 overflow-hidden">
       <div className="relative flex flex-col sm:w-4/5 md:w-2/3 z-20">
         <h3 className="font-bold text-xl lg:text-2xl tracking-tight text-red-500 mb-8 md:mt-0 md:mb-12 lg:mb-16">
           높은 보안성과 효율성
@@ -20,7 +20,7 @@ export default function GateSystem() {
         </p>
         <SolutionBannerBtn />
       </div>
-      <div className="flex-none flex gap-4 z-20 py-16 md:py-0 sm:py-4 order-first md:order-last">
+      <div className="flex-none flex gap-4 z-20 py-16 md:py-0 sm:py-24 order-first md:order-last">
         <IconLabel
           icon={"/icons/face-id.png"}
           iconLabel={"안면인식 시스템"}
@@ -37,7 +37,7 @@ export default function GateSystem() {
         alt=""
         width={420}
         height={420}
-        className="absolute sm:-top-60 md:top-1/2 md:-translate-y-1/2 md:mt-3 md:-right-40 lg:-right-44 xl:-right-40 w-[240px] sm:w-[470px] lg:w-[580px]"
+        className="absolute sm:top-10 md:top-1/2 md:-translate-y-1/2 md:mt-3 md:-right-28 lg:-right-44 xl:-right-40 w-[240px] md:w-[580px]"
       />
     </div>
   );

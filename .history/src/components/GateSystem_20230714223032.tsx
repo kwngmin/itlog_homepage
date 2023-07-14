@@ -20,7 +20,7 @@ export default function GateSystem() {
         </p>
         <SolutionBannerBtn />
       </div>
-      <div className="flex-none flex gap-4 z-20 py-16 md:py-0 sm:py-4 order-first md:order-last">
+      <div className="flex-none flex gap-4 z-20 order-first md:order-last">
         <IconLabel
           icon={"/icons/face-id.png"}
           iconLabel={"안면인식 시스템"}
@@ -37,7 +37,7 @@ export default function GateSystem() {
         alt=""
         width={420}
         height={420}
-        className="absolute sm:-top-60 md:top-1/2 md:-translate-y-1/2 md:mt-3 md:-right-40 lg:-right-44 xl:-right-40 w-[240px] sm:w-[470px] lg:w-[580px]"
+        className="absolute sm:top-10 md:top-1/2 md:-translate-y-1/2 md:mt-3 md:-right-40 lg:-right-44 xl:-right-40 w-[240px] md:w-[470px] lg:w-[580px]"
       />
     </div>
   );
