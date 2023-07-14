@@ -12,12 +12,12 @@ export default function Home() {
       <BodyWrapper>
         <CardKnowHow />
         <CarouselSolution />
-        <div className="relative bg-slate-100 sm:bg-sky-100 md:bg-red-100 lg:bg-emerald-200 xl:bg-orange-100 rounded-2xl p-8 md:p-12 lg:p-16 xl:p-20 my-60 flex flex-col md:flex-row justify-between items-start md:items-center gap-10 overflow-hidden">
+        <div className="relative bg-slate-100 sm:bg-sky-100 md:bg-red-100 lg:bg-emerald-200 xl:bg-orange-100 rounded-2xl p-4 sm:p-8 md:p-12 lg:p-16 xl:p-20 my-60 flex flex-col md:flex-row justify-between items-start md:items-center gap-10 overflow-hidden">
           <div className="relative flex flex-col md:w-1/2 z-20">
-            <h3 className="font-bold text-2xl tracking-tight text-red-500 mb-8 md:mb-20">
+            <h3 className="font-bold text-xl lg:text-2xl tracking-tight text-red-500 mb-4 sm:mb-8 md:mb-20">
               높은 보안성과 효율성
             </h3>
-            <h1 className="font-bold text-4xl tracking-tight mb-4">
+            <h1 className="font-bold text-3xl lg:text-4xl tracking-tight mb-4">
               출입통제 시스템
             </h1>
             <p className="md:text-lg md:leading-normal lg:text-xl lg:leading-normal tracking-tight break-keep text-black/70 mb-8 md:mb-16">
@@ -30,7 +30,7 @@ export default function Home() {
               더 알아보기
             </button>
           </div>
-          <div className="flex-none flex gap-4 z-20 px-16 md:px-8 py-24 md:py-0 order-first md:order-last">
+          <div className="flex-none flex gap-4 z-20 px-12 sm:px-16 md:px-8 py-16 sm:py-24 md:py-0 order-first md:order-last">
             <IconLabel
               icon={"/icons/face-id.png"}
               iconLabel={"안면인식 시스템"}
@@ -47,7 +47,7 @@ export default function Home() {
             alt=""
             width={420}
             height={420}
-            className="absolute md:right-4 lg:right-6 xl:right-8 md:mt-4 lg:mt-8 w-[360px] md:w-[360px] lg:w-[420px]"
+            className="absolute top-2 sm:top-10 md:top-1/2 md:-translate-y-1/2 md:right-4 lg:right-6 xl:right-8 md:mt-3 w-[280px] sm:w-[320px] md:w-[360px] lg:w-[420px]"
           />
         </div>
         <div className="h-[1000px]" />

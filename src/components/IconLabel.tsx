@@ -7,7 +7,7 @@ interface Props {
 }
 export default function IconLabel({ icon, iconLabel, iconCss }: Props) {
   return (
-    <div className="bg-white p-6 lg:p-4 flex flex-col justify-center items-center drop-shadow-2xl rounded-3xl h-fit">
+    <div className="bg-white p-4 md:p-6 lg:p-4 flex flex-col justify-center items-center drop-shadow-2xl rounded-3xl h-fit">
       <Image
         src={icon}
         alt={iconLabel}
