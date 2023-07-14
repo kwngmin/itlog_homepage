@@ -13,7 +13,7 @@ export default function Header() {
           height={10}
           priority
         />
-        <ul className="flex items-center gap-1 tracking-tight">
+        <ul className="hidden sm:flex items-center gap-1 tracking-tight">
           <li>
             <button className="h-[44px] px-3 rounded-md hover:bg-gray-200">
               회사소개
