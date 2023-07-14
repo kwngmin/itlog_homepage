@@ -47,7 +47,7 @@ export default function Sensors() {
         alt=""
         width={420}
         height={420}
-        className="absolute object-fit -top-1/3 md:top-1/2 md:-translate-y-1/2 md:-right-80 lg:-right-64 w-[800px]"
+        className="absolute -translate-y-1/3 top-16 md:top-1/2 md:-translate-y-1/2 md:-right-80 lg:-right-64 w-[800px]"
       />
     </div>
   );
