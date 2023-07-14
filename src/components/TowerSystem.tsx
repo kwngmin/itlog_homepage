@@ -1,11 +1,12 @@
 import React from "react";
 import IconLabel from "@/components/IconLabel";
 import Image from "next/image";
+import SolutionBannerBtn from "./SolutionBannerBtn";
 
 export default function TowerSystem() {
   return (
-    <div className="relative bg-slate-100 sm:bg-sky-100 md:bg-red-100 lg:bg-emerald-200 xl:bg-orange-100 rounded-2xl p-6 sm:p-8 md:p-12 lg:p-16 xl:p-20 my-60 flex flex-col md:flex-row justify-between items-center gap-8 md:gap-10 overflow-hidden">
-      <div className="flex-none grid grid-cols-4 md:grid-cols-2 gap-4 z-20 py-16 md:py-0 sm:py-24 md:px-8">
+    <div className="relative bg-red-50 rounded-2xl p-6 sm:p-8 md:p-12 lg:p-16 xl:py-20 my-60 flex flex-col md:flex-row justify-between items-center gap-8 md:gap-24 overflow-hidden">
+      <div className="flex-none grid grid-cols-4 md:grid-cols-2 gap-4 z-20 py-16 md:py-0 sm:py-24">
         <IconLabel
           icon={"/icons/cam.png"}
           iconLabel={"후크 하방 카메라"}
@@ -39,17 +40,15 @@ export default function TowerSystem() {
           예방하며,실시간으로 위험 요소를 화면 및 음성으로 안내하여 지속적인
           안전 작업 환경을 조성합니다.
         </p>
-        <button className="w-fit bg-white hover:bg-red-500 hover:text-white font-medium text-slate-600 hover:ring-0 h-12 px-8 rounded-full drop-shadow-2xl tracking-tight">
-          더 알아보기
-        </button>
+        <SolutionBannerBtn />
       </div>
-      {/* <Image
-        src={"/images/focusGreen.png"}
+      <Image
+        src={"/images/crane.png"}
         alt=""
         width={420}
         height={420}
-        className="absolute sm:top-10 md:top-1/2 md:-translate-y-1/2 md:mt-3 md:right-4 lg:right-4 xl:right-8 w-[240px] sm:w-[320px] md:w-[320px] lg:w-[420px]"
-      /> */}
+        className="absolute -top-20 -left-36 md:-left-14 lg:-left-20 md:-top-12 xl: w-[640px] md:w-[400px] lg:w-[520px]"
+      />
     </div>
   );
 }

@@ -1,10 +1,11 @@
 import React from "react";
 import IconLabel from "@/components/IconLabel";
 import Image from "next/image";
+import SolutionBannerBtn from "./SolutionBannerBtn";
 
 export default function BroadCast() {
   return (
-    <div className="relative bg-slate-100 sm:bg-sky-100 md:bg-red-100 lg:bg-emerald-200 xl:bg-orange-100 rounded-2xl p-6 sm:p-8 md:p-12 lg:p-16 xl:p-20 my-60 flex flex-col md:flex-row justify-between items-center gap-8 md:gap-10 overflow-hidden">
+    <div className="relative bg-violet-50 rounded-2xl p-6 sm:p-8 md:p-12 lg:p-16 xl:p-20 my-60 flex flex-col md:flex-row justify-between items-center gap-8 md:gap-24 overflow-hidden">
       <div className="relative flex flex-col sm:w-4/5 md:w-2/3 z-20">
         <h3 className="font-bold text-xl lg:text-2xl tracking-tight text-red-500 mb-8 md:mt-0 md:mb-12 lg:mb-16">
           비상상황시 신속한 대응
@@ -17,11 +18,9 @@ export default function BroadCast() {
           구역별, 지정 구간 등을 설정하여 경고 방송 및 안내 방송을 송출할 수
           있습니다.
         </p>
-        <button className="w-fit bg-white hover:bg-red-500 hover:text-white font-medium text-slate-600 hover:ring-0 h-12 px-8 rounded-full drop-shadow-2xl tracking-tight">
-          더 알아보기
-        </button>
+        <SolutionBannerBtn />
       </div>
-      <div className="flex-none flex gap-4 z-20 py-16 md:py-0 sm:py-24 md:px-8 order-first md:order-last">
+      <div className="flex-none flex gap-4 z-20 py-16 md:py-0 sm:py-24 order-first md:order-last">
         <IconLabel icon={"/icons/mic.png"} iconLabel={"마이크"} iconCss={""} />
         <IconLabel
           icon={"/icons/speaker.png"}
@@ -34,7 +33,7 @@ export default function BroadCast() {
         alt=""
         width={420}
         height={420}
-        className="absolute -top-32 sm:-top-24 md:top-1/2 md:-translate-y-1/2 md:-right-4 xl:-right-2 w-[380px] sm:w-[440px] md:w-[320px] lg:w-[420px]"
+        className="absolute top-4 sm:-top-24 md:top-1/2 md:-translate-y-1/2 md:-right-4 xl:-right-2 w-[240px] sm:w-[440px] md:w-[320px] lg:w-[420px]"
       />
     </div>
   );
