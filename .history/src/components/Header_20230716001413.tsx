@@ -15,17 +15,17 @@ export default function Header() {
         />
         <ul className="hidden sm:flex items-center gap-1 tracking-tight font-medium">
           <li>
-            <button className="h-[44px] px-3 rounded-md md:hover:bg-gray-200">
+            <button className="h-[44px] px-3 rounded-md hover:bg-gray-200">
               회사소개
             </button>
           </li>
           <li>
-            <button className="h-[44px] px-3 rounded-md md:hover:bg-gray-200">
+            <button className="h-[44px] px-3 rounded-md hover:bg-gray-200">
               제품소개
             </button>
           </li>
           <li>
-            <button className="h-[44px] px-3 rounded-md md:hover:bg-gray-200">
+            <button className="h-[44px] px-3 rounded-md hover:bg-gray-200">
               통합IoT솔루션
             </button>
           </li>
