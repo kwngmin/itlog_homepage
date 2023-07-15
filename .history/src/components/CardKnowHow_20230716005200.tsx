@@ -12,7 +12,7 @@ export default function CardKnowHow() {
           는 경쟁의 산물입니다
         </b>
       </h1>
-      <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-2 sm:gap-4 ">
+      <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-4 ">
         <MainCardPhoto dataRoute={"/images/merit1.jpg"} />
         <MainCardIcon
           cardNum={3000}
