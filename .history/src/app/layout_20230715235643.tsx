@@ -37,7 +37,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="ko">
+    <html lang="ko" className={spoqaHanSans.className}>
       <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'></link>
     {/* <html lang="ko" className={spoqaHanSans.className}> */}
       <body className={`flex flex-col h-screen`}>
