@@ -16,7 +16,7 @@ export default function CardKnowHow() {
         <MainCardPhoto dataRoute={"/images/merit1.jpg"} />
         <MainCardIcon
           cardNum={3000}
-          cardText={"시스템 구축"}
+          cardText={"설치시공 횟수"}
           colStart={"flex"}
         />
         <MainCardIcon
