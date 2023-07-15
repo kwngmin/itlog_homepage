@@ -8,11 +8,11 @@ export default function CarouselSolution() {
         Integrated
         <strong className="text-red-500"> IoT</strong> Solution
       </h1>
-      <p className="break-keep sm:w-5/6 lg:w-4/6 tracking-tight text-xl sm:text-xl mt-2 leading-relaxed sm:leading-normal text-black/60 font-medium">
+      <p className="break-keep sm:w-5/6 lg:w-4/6 tracking-tight text-xl sm:text-xl mt-2 leading-normal sm:leading-normal text-black/60 font-medium">
         <strong className="font-bold text-red-500">아이티로그</strong>는 오랜
         경력으로 쌓아온 노하우로 S/W 서비스, H/W 서비스, Web 서비스 그리고 높은
         수준의 기술력과 전문성으로&nbsp;
-        <b className="text-black/80">
+        <b className="text-black">
           통합 <strong className="text-red-500">IoT</strong> 솔루션
         </b>
         을 제공합니다.
