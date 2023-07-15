@@ -11,7 +11,7 @@ export default function MainFull() {
         fill={true}
         className="object-cover"
       />
-      <div className="z-10 px-4 md:px-6 xl:px-0 w-[1024px] pb-24 sm:pb-48 md:pb-40 sm:ml-16 md:ml-0">
+      <div className="z-10 px-4 md:px-6 xl:px-0 w-[1024px] pb-20 sm:pb-48 md:pb-40 sm:ml-16 md:ml-0">
         <h1 className="hidden md:flex text-4xl md:text-5xl font-bold tracking-tighter mb-2 md:mb-3 lg:mb-4 xl:mb-5 break-keep">
           건설은 안전하게 안전은 스마트하게
         </h1>

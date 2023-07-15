@@ -20,7 +20,7 @@ export default function MainFull() {
           <br />
           안전은 스마트하게
         </h1>
-        <p className="lg:leading-normal xl:leading-normal w-full sm:w-4/5 lg:w-3/5 text-xl sm:text-2xl leading-normal sm:leadeing-normal md:leading-normal tracking-tight lg:tracking-tighter text-black/70 break-keep">
+        <p className="lg:leading-normal xl:leading-normal w-5/6 sm:w-4/5 lg:w-3/5 text-xl sm:text-2xl leading-normal sm:leadeing-normal md:leading-normal tracking-tight lg:tracking-tighter text-black/70 break-keep">
           <strong className="text-red-500 fonts-medium">아이티로그</strong>의
           수준 높은 기술력과 전문성으로 건설안전관리 영상보안솔루션을
           제공합니다.
