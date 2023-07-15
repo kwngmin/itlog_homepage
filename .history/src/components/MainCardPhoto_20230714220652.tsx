@@ -12,7 +12,7 @@ export default function MainCardPhoto({ dataRoute }: Props) {
       alt="itlog Logo"
       width={360}
       height={320}
-      className="overflow-hidden rounded-xl aspect-4/3 object-cover"
+      className="overflow-hidden rounded-xl aspect-4/3 object-cover drop-shadow-xl"
     />
   );
 }
