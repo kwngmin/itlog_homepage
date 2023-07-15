@@ -22,7 +22,7 @@ export default function MultiCarousel() {
           height={640}
           className="absolute -right-40 object-cover z-20 mix-blend-lighten h-full"
         />
-        <div className="relative z-10 mx-8 sm:mx-12">
+        <div className="relative z-10 mx-2 sm:mx-12 ml-12">
           <h3 className="text-2xl md:text-3xl font-bold mb-4 sm:mb-4 md:mb-6 tracking-tight text-white">
             Deep Learning
           </h3>

@@ -14,7 +14,7 @@ export default function MultiCarousel() {
     <CarouselBtn btnName={"Ai"} />
     <CarouselBtn btnName={"Smart Safety"} />
   </div>
-      <div className="lg:hidden relative bg-black rounded-2xl overflow-hidden h-80 md:h-64 flex flex-col justify-center">
+      <div className="lg:hidden relative bg-black rounded-2xl overflow-hidden h-64 md:h-64 flex flex-col justify-center">
         <Image
           alt="itlog Logo"
           src={"/images/sideFace.png"}

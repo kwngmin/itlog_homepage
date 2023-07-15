@@ -14,7 +14,7 @@ export default function MultiCarousel() {
     <CarouselBtn btnName={"Ai"} />
     <CarouselBtn btnName={"Smart Safety"} />
   </div>
-      <div className="lg:hidden relative bg-black rounded-2xl overflow-hidden h-80 md:h-64 flex flex-col justify-center">
+      <div className="lg:hidden relative bg-black rounded-2xl overflow-hidden h-56 md:h-64 flex flex-col justify-center">
         <Image
           alt="itlog Logo"
           src={"/images/sideFace.png"}
@@ -22,7 +22,7 @@ export default function MultiCarousel() {
           height={640}
           className="absolute -right-40 object-cover z-20 mix-blend-lighten h-full"
         />
-        <div className="relative z-10 mx-8 sm:mx-12">
+        <div className="relative z-10 mx-6 sm:mx-12 ml-12">
           <h3 className="text-2xl md:text-3xl font-bold mb-4 sm:mb-4 md:mb-6 tracking-tight text-white">
             Deep Learning
           </h3>
@@ -68,9 +68,9 @@ export default function MultiCarousel() {
             className="object-cover object-right-top"
           />
         </div>
-
         <div className="relative overflow-hidden w-20 rounded-l-2xl bg-gradient-to-b from-cyan-800 to-slate-800 drop-shadow-lg" />
       </div>
+
     </>
   );
 }
