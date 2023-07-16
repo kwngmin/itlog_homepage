@@ -15,8 +15,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ko">
-      {/* <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css' /> */}
-      <body className={`flex flex-col h-screen`}>
+      <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css' />
+      <body className={`flex flex-col h-screen`} style>
         <Header />
         <MainWrapper>{children}</MainWrapper>
       </body>

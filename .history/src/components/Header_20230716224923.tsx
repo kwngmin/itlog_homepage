@@ -5,7 +5,7 @@ export default function Header() {
   return (
     <div className="flex-none flex justify-center border-b z-20">
       <div className="flex items-center px-4 md:px-6 xl:px-8 w-[1536px] justify-between h-[72px]">
-<Image src={itlog} width={10} height={10} priority alt='' className='h-12 w-auto'/>
+<Image src={itlog} />
         {/* <Image
           src="/itlog.svg"
           alt="itlog Logo"

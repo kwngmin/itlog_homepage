@@ -11,7 +11,7 @@ import BroadCast from "@/components/BroadCast";
 export default function Home() {
   return (
     <>
-      <MainFull />
+      {/* <MainFull /> */}
       <BodyWrapper>
         <CardKnowHow />
         <CarouselSolution />
