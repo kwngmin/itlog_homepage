@@ -6,6 +6,7 @@ export default function Header() {
     <div className="flex-none flex justify-center border-b z-20">
       <div className="flex items-center px-4 md:px-6 xl:px-8 w-[1536px] justify-between h-[72px]">
 <Image src={itlog} width={10} height={10} priority alt='' className='h-12 w-auto'/>
+
         <ul className="hidden sm:flex items-center gap-1 tracking-tight font-medium">
           <li>
             <button className="h-[44px] px-3 rounded-md md:hover:bg-gray-200">

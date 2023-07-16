@@ -16,10 +16,10 @@ export default function Home() {
         <CardKnowHow />
         <CarouselSolution />
         <GateSystem />
-        <TowerSystem />
+        <TowerSystem /> */}
         {/* <Sensors /> */}
         {/* <SafetyCCTV /> */}
-        {/* <BroadCast /> */}
+        {/* <BroadCast />
         <div className="h-[10px] bg-sky-100" />
       </BodyWrapper>
     </>

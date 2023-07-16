@@ -1,11 +1,10 @@
 
-@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
-/* @font-face {
+/* @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css); */
+@font-face {
   font-family: 'Spoqa Han Sans Neo';
   src: url('/public/fonts/SpoqaHanSansNeo-Regular.woff2') format('woff2');
-  src: url('/public/fonts/SpoqaHanSansNeo-Regular.woff2') format('woff2');
   src: url('/public/fonts/SpoqaHanSansNeo-Regular.woff') format('woff');
-  src: url('/public/fonts/SpoqaHanSansNeo-Regular.otf') format('opentype');
+  src: url('/public/fonts/SpoqaHanSansNeo-Regular.otf') format('otf');
   font-weight: 400;
   font-style: normal;
 }
@@ -13,7 +12,7 @@
   font-family: 'Spoqa Han Sans Neo';
   src: url('/public/fonts/SpoqaHanSansNeo-Medium.woff2') format('woff2');
   src: url('/public/fonts/SpoqaHanSansNeo-Medium.woff') format('woff');
-  src: url('/public/fonts/SpoqaHanSansNeo-Medium.otf') format('opentype');
+  src: url('/public/fonts/SpoqaHanSansNeo-Medium.otf') format('otf');
   font-weight: 500;
   font-style: normal;
 }
@@ -21,14 +20,13 @@
   font-family: 'Spoqa Han Sans Neo';
   src: url('/public/fonts/SpoqaHanSansNeo-Bold.woff2') format('woff2');
   src: url('/public/fonts/SpoqaHanSansNeo-Bold.woff') format('woff');
-  src: url('/public/fonts/SpoqaHanSansNeo-Bold.otf') format('opentype');
+  src: url('/public/fonts/SpoqaHanSansNeo-Bold.otf') format('otf');
   font-weight: 700;
   font-style: normal;
-} */
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -47,7 +45,7 @@
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
-  } 
+  }
 }
 * {
   font-family: "Spoqa Han Sans Neo", 'sans-serif', 'standard', 'serif';

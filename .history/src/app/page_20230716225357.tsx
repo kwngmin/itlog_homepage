@@ -17,7 +17,7 @@ export default function Home() {
         <CarouselSolution />
         <GateSystem />
         <TowerSystem />
-        {/* <Sensors /> */}
+        <Sensors />
         {/* <SafetyCCTV /> */}
         {/* <BroadCast /> */}
         <div className="h-[10px] bg-sky-100" />

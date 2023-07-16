@@ -1,6 +1,6 @@
 
-@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
-/* @font-face {
+/* @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css); */
+@font-face {
   font-family: 'Spoqa Han Sans Neo';
   src: url('/public/fonts/SpoqaHanSansNeo-Regular.woff2') format('woff2');
   src: url('/public/fonts/SpoqaHanSansNeo-Regular.woff2') format('woff2');
@@ -24,11 +24,10 @@
   src: url('/public/fonts/SpoqaHanSansNeo-Bold.otf') format('opentype');
   font-weight: 700;
   font-style: normal;
-} */
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;

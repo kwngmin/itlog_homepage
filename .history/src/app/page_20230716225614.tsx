@@ -14,11 +14,11 @@ export default function Home() {
       <MainFull />
       <BodyWrapper>
         <CardKnowHow />
-        <CarouselSolution />
+        {/* <CarouselSolution /> */}
         <GateSystem />
         <TowerSystem />
-        {/* <Sensors /> */}
-        {/* <SafetyCCTV /> */}
+        <Sensors />
+        <SafetyCCTV />
         {/* <BroadCast /> */}
         <div className="h-[10px] bg-sky-100" />
       </BodyWrapper>

@@ -14,7 +14,7 @@ export default function Home() {
       <MainFull />
       <BodyWrapper>
         <CardKnowHow />
-        <CarouselSolution />
+        {/* <CarouselSolution /> */}
         <GateSystem />
         <TowerSystem />
         {/* <Sensors /> */}

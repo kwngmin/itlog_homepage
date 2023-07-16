@@ -16,8 +16,8 @@ export default function Home() {
         <CardKnowHow />
         <CarouselSolution />
         <GateSystem />
-        <TowerSystem />
-        {/* <Sensors /> */}
+        {/* <TowerSystem /> */}
+        <Sensors />
         {/* <SafetyCCTV /> */}
         {/* <BroadCast /> */}
         <div className="h-[10px] bg-sky-100" />

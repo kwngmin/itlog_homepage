@@ -16,7 +16,7 @@ export default function Home() {
         <CardKnowHow />
         <CarouselSolution />
         <GateSystem />
-        <TowerSystem />
+        {/* <TowerSystem /> */}
         {/* <Sensors /> */}
         {/* <SafetyCCTV /> */}
         {/* <BroadCast /> */}

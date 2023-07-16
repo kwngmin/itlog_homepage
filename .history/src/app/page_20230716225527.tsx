@@ -15,8 +15,8 @@ export default function Home() {
       <BodyWrapper>
         <CardKnowHow />
         <CarouselSolution />
-        <GateSystem />
-        <TowerSystem />
+        {/* <GateSystem /> */}
+        {/* <TowerSystem /> */}
         {/* <Sensors /> */}
         {/* <SafetyCCTV /> */}
         {/* <BroadCast /> */}
