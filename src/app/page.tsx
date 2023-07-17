@@ -19,7 +19,7 @@ export default function Home() {
         <CarouselSolution />
         <NewGateSystem />
         <NewTowerSystem />
-        <TowerSystem />
+        {/* <TowerSystem /> */}
         <Sensors />
         <SafetyCCTV />
         <BroadCast />
