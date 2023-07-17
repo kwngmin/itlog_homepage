@@ -3,15 +3,17 @@ import InstanceCard from "./InstanceCard";
 
 export default function Instance() {
   return (
-    <div className="my-60">
+    <div className="my-60 relative ">
       <h1 className="leading-tight break-keep text-3xl sm:text-4xl font-bold tracking-tight">
         시공사례
       </h1>
-      <div className="flex gap-4 overflow-x-auto border border-gray-300 lg:bg-transparent mt-6 pb-4 lg:pt-0 rounded-2xl px-8 lg:px-0">
+      <div className="flex gap-4 overflow-x-auto lg:bg-transparent pb-4 lg:pt-0 rounded-2xl">
+        {/* <div className="absolute z-20 bg-blue-500 h-full w-full"></div> */}
         <InstanceCard />
         <InstanceCard />
         <InstanceCard />
       </div>
+      <div className="absolute z-20 bg-gradient-to-r from-transparent to-white w-1/2 right-0 h-full"></div>
     </div>
   );
 }
