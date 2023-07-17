@@ -20,7 +20,7 @@ export default function NewGateSystem() {
         </p>
         <SolutionBannerBtn />
       </div>
-      <div className="relative overflow-hidden rounded-2xl flex justify-center items-center gap-4 z-20 py-8 md:py-0 sm:py-4 bg-green-100 w-full aspect-square lg:h-[420px] order-first sm:order-last">
+      <div className="relative overflow-hidden rounded-2xl flex justify-center items-center gap-4 z-20 py-8 md:py-0 sm:py-4 bg-green-100 w-full aspect-4/3 md:aspect-square lg:h-[420px] order-first sm:order-last">
         {/* <div className="flex gap-4 z-20 py-8 md:py-0 sm:py-4 order-first md:order-last"> */}
         <IconLabel
           icon={"/icons/face-id.png"}
@@ -37,7 +37,7 @@ export default function NewGateSystem() {
           alt=""
           width={420}
           height={420}
-          className="absolute top-1/2 -translate-y-1/2 mt-3 w-11/12 sm:w-5/6"
+          className="absolute top-1/2 -translate-y-1/2 mt-3 w-9/12 sm:w-5/6"
         />
       </div>
     </div>
