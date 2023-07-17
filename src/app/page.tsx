@@ -11,6 +11,7 @@ import NewGateSystem from "@/components/NewGateSystem";
 import NewTowerSystem from "@/components/NewTowerSystem";
 import NewSensors from "@/components/NewSensors";
 import NewBroadCast from "@/components/NewBroadCast";
+import NewSafety from "@/components/NewSafety";
 
 export default function Home() {
   return (
@@ -22,11 +23,8 @@ export default function Home() {
         <NewGateSystem />
         <NewTowerSystem />
         <NewSensors />
-        {/* <TowerSystem /> */}
-        {/* <Sensors /> */}
-        <SafetyCCTV />
+        <NewSafety />
         <NewBroadCast />
-        {/* <BroadCast /> */}
         <div className="h-[10px] bg-sky-100" />
       </BodyWrapper>
     </>

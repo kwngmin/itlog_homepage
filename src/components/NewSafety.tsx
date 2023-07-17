@@ -2,43 +2,39 @@ import React from "react";
 import Image from "next/image";
 import SolutionBannerBtn from "./SolutionBannerBtn";
 import NewIconLabel from "./NewIconLabel";
-import crane from "../../public/images/crane.png";
 
-export default function NewTowerSystem() {
+export default function NewSafety() {
   return (
     <div className="flex flex-col items-center sm:flex-row justify-between md:items-center gap-6 sm:gap-10 my-60">
-      <div className="relative overflow-hidden rounded-2xl flex items-center justify-center bg-orange-50 w-full sm:w-2/5 aspect-video sm:aspect-square lg:h-[420px] ">
-        <div className="flex sm:flex-col justify-center items-center gap-4 px-4">
-          <div className="shrink flex gap-4 ">
+      <div className="relative overflow-hidden rounded-2xl flex sm:flex-col justify-center items-center gap-4 bg-yellow-50 w-full sm:w-2/5 aspect-video sm:aspect-square lg:h-[420px] ">
+        <div className="flex flex-row sm:flex-col gap-4 px-4 z-20 items-center">
+          <div className="shrink w-fit">
             <NewIconLabel
-              icon={"/icons/cam.png"}
-              iconLabel={"후크 하방 카메라"}
-              iconCss={""}
-            />
-            <NewIconLabel
-              icon={"/icons/siren.png"}
-              iconLabel={"후크 하방 경보기"}
+              icon={"/icons/cctv.png"}
+              iconLabel={"고정형 카메라"}
               iconCss={""}
             />
           </div>
-          <div className="shrink flex gap-4">
+          <div className="shrink flex gap-4 ">
             <NewIconLabel
-              icon={"/icons/mirror.png"}
-              iconLabel={"충돌방지 시스템"}
+              icon={"/icons/dom-cctv.png"}
+              iconLabel={"돔 카메라"}
               iconCss={""}
             />
             <NewIconLabel
-              icon={"/icons/light.png"}
-              iconLabel={"투광등 제어 시스템"}
+              icon={"/icons/web-cam.png"}
+              iconLabel={"이동형 CCTV"}
               iconCss={""}
             />
           </div>
         </div>
         <Image
-          src={"/images/crane.png"}
+          src={"/images/safety.png"}
           alt=""
-          fill
-          className="absolute object-cover object-right-top"
+          width={480}
+          height={480}
+          //   fill
+          className="absolute -left-1/4"
         />
       </div>
       <div className="flex flex-col w-full sm:w-3/5 sm:px-8">

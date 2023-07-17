@@ -7,7 +7,7 @@ import focus from "../../public/images/focus.png";
 export default function NewGateSystem() {
   return (
     <div className="flex flex-col items-center sm:flex-row justify-between md:items-center gap-6 sm:gap-10 my-60">
-      <div className="flex flex-col w-full">
+      <div className="flex flex-col w-full sm:w-3/5 sm:px-8">
         <h3 className="font-bold text-xl lg:text-2xl tracking-tight text-red-500 mb-8 md:mt-0 md:mb-12 lg:mb-16">
           높은 보안성과 효율성
         </h3>
@@ -21,7 +21,7 @@ export default function NewGateSystem() {
         </p>
         <SolutionBannerBtn />
       </div>
-      <div className="relative overflow-hidden rounded-2xl flex justify-center items-center px-4 gap-4 z-20 py-8 md:py-0 sm:py-4 bg-green-50 w-full aspect-video sm:aspect-square lg:h-[420px] order-first sm:order-last">
+      <div className="relative overflow-hidden rounded-2xl flex justify-center items-center px-4 gap-4 z-20 py-8 md:py-0 sm:py-4 bg-green-50 w-full sm:w-2/5 aspect-video sm:aspect-square lg:h-[420px] order-first sm:order-last">
         <NewIconLabel
           icon={"/icons/face-id.png"}
           iconLabel={"안면인식 시스템"}

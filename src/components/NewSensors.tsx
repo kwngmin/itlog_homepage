@@ -7,7 +7,7 @@ import NewIconLabel from "./NewIconLabel";
 export default function NewSensors() {
   return (
     <div className="flex flex-col items-center sm:flex-row justify-between md:items-center gap-6 sm:gap-10 my-60">
-      <div className="flex flex-col w-full">
+      <div className="flex flex-col w-full sm:w-3/5 sm:px-8">
         <h3 className="font-bold text-xl lg:text-2xl tracking-tight text-red-500 mb-8 md:mt-0 md:mb-12 lg:mb-16">
           극한 환경에서도 뛰어난 성능
         </h3>
@@ -21,7 +21,7 @@ export default function NewSensors() {
         </p>
         <SolutionBannerBtn />
       </div>
-      <div className="relative overflow-hidden rounded-2xl flex items-center justify-center bg-sky-50 w-full aspect-video sm:aspect-square order-first sm:order-last">
+      <div className="relative overflow-hidden rounded-2xl flex items-center justify-center bg-sky-50 w-full sm:w-2/5 aspect-video sm:aspect-square order-first sm:order-last">
         <div className="flex sm:flex-col justify-center items-center gap-4 px-4">
           <div className="shrink flex gap-4 ">
             <NewIconLabel
