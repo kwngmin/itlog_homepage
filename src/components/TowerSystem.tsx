@@ -5,8 +5,8 @@ import SolutionBannerBtn from "./SolutionBannerBtn";
 
 export default function TowerSystem() {
   return (
-    <div className="relative bg-red-50 rounded-2xl p-6 pb-12 sm:p-8 md:p-12 md:pb-20 lg:px-16 md:py-28 xl:px-20 my-60 flex flex-col md:flex-row justify-between items-center gap-8 md:gap-24 overflow-hidden">
-      <div className="flex-none grid grid-cols-4 md:grid-cols-2 gap-4 z-20 py-16 md:py-0 sm:py-24">
+    <div className="relative bg-red-100 rounded-2xl p-6 sm:p-8 sm:pb-20 md:p-12 md:pb-20 lg:px-16 md:py-28 xl:px-20 my-60 flex flex-col md:flex-row justify-between items-center gap-8 md:gap-24 overflow-hidden">
+      <div className="flex-none grid grid-cols-4 md:grid-cols-2 gap-4 z-20 py-12 md:py-0 ">
         <IconLabel
           icon={"/icons/cam.png"}
           iconLabel={"후크 하방 카메라"}
@@ -54,7 +54,7 @@ export default function TowerSystem() {
         alt=""
         width={420}
         height={420}
-        className="md:hidden absolute -top-4 sm:-top-8 -left-28 sm:-left-16 md:-left-28 w-full"
+        className="md:hidden absolute -top-4 sm:-top-8 -left-16 sm:-left-8 w-[1080px]"
       />
     </div>
   );
