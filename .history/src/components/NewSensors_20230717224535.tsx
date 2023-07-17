@@ -14,7 +14,7 @@ export default function NewSensors() {
         <h1 className="font-bold text-3xl md:text-4xl tracking-tight mb-4">
           환경센서
         </h1>
-        <p className="text-lg leading-relaxed md:text-xl md:leading-relaxed tracking-tighter break-keep text-black/70 mb-8 sm:mb-12 lg:mb-16">
+        <p className="sm:text-lg sm:leading-normal md:text-xl md:leading-relaxed tracking-tighter break-keep text-black/70 mb-8 sm:mb-12 lg:mb-16">
           현장 내/외부로 환경 Data가 필요한 어느 곳이든 '환경 센서'를 구축하여
           측정값을 실시간으로 표출합니다.어느 곳에서든 실시간 모니터링을 통해
           현장 내 환경 관리 및 작업자들의 건강과 안전을 보호합니다.

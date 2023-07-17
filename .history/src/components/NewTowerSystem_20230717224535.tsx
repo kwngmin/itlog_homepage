@@ -48,7 +48,7 @@ export default function NewTowerSystem() {
         <h1 className="font-bold text-3xl md:text-4xl tracking-tight mb-4">
           타워크레인 통합안전
         </h1>
-        <p className="text-lg leading-relaxed md:text-xl md:leading-relaxed tracking-tighter break-keep text-black/70 mb-8 sm:mb-12 lg:mb-16">
+        <p className="sm:text-lg sm:leading-normal md:text-xl md:leading-relaxed tracking-tighter break-keep text-black/70 mb-8 sm:mb-12 lg:mb-16">
           T/C 통합안전 시스템을 통해 충돌, 협착, 전도 사고를 사전에
           예방하며,실시간으로 위험 요소를 화면 및 음성으로 안내하여 지속적인
           안전 작업 환경을 조성합니다.

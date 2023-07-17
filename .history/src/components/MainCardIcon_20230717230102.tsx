@@ -5,22 +5,22 @@ interface Props {
   colStart: string;
 }
 export default function MainCardIcon({ cardNum, cardText, colStart }: Props) {
-  // const afterNumer = ()=> {
-  //   switch(cardText) {
-  //     case '시스템 설치·시공' :
-  //       '건'
-  //       break
-  //       case 'SW·HW 연구개발' :
-  //         '년'
-  //         break
-  //         default :
-  //         '개사'
-  //       }
-  //     }
-  //   console.log(()=>afterNumber())
+  const afterNumer = ()=> {
+    switch(cardText) {
+      case '시스템 설치·시공' :
+        '건'
+        break
+        case 'SW·HW 연구개발' :
+          '년'
+          break
+          default :
+          '개사'
+        }
+      }
+    console.log(()=>afterNumber())
   return (
     <div
-      className={`${colStart} overflow-hidden rounded-xl aspect-4/3 bg-red-500 flex-col justify-center items-center pb-2`}
+      className={`${colStart} overflow-hidden rounded-xl aspect-4/3 bg-red-500 flex-col justify-center items-center md:pb-4`}
     >
       <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white h-12 sm:h-16 lg:h-20">
         {cardNum}

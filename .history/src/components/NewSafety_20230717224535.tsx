@@ -44,7 +44,7 @@ export default function NewSafety() {
         <h1 className="font-bold text-3xl md:text-4xl tracking-tight mb-4">
           안전 관리 CCTV
         </h1>
-        <p className="text-lg leading-relaxed md:text-xl md:leading-relaxed tracking-tighter break-keep text-black/70 mb-8 sm:mb-12 lg:mb-16">
+        <p className="sm:text-lg sm:leading-normal md:text-xl md:leading-relaxed tracking-tighter break-keep text-black/70 mb-8 sm:mb-12 lg:mb-16">
           안전 관리 CCTV를 설치하여 현장의 넓은 범위, 위험지역, 각종 장비
           등으로부터 잠재적인 위험 요소를 모니터링하여 작업자들의 안전을
           보호합니다.

@@ -5,19 +5,19 @@ interface Props {
   colStart: string;
 }
 export default function MainCardIcon({ cardNum, cardText, colStart }: Props) {
-  // const afterNumer = ()=> {
-  //   switch(cardText) {
-  //     case '시스템 설치·시공' :
-  //       '건'
-  //       break
-  //       case 'SW·HW 연구개발' :
-  //         '년'
-  //         break
-  //         default :
-  //         '개사'
-  //       }
-  //     }
-  //   console.log(()=>afterNumber())
+  const afterNumer = ()=> {
+    switch(cardText) {
+      case '시스템 설치·시공' :
+        '건'
+        break
+        case 'SW·HW 연구개발' :
+          '년'
+          break
+          default :
+          '개사'
+        }
+      }
+    console.log(()=>afterNumber())
   return (
     <div
       className={`${colStart} overflow-hidden rounded-xl aspect-4/3 bg-red-500 flex-col justify-center items-center pb-2`}

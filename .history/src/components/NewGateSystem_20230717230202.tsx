@@ -14,7 +14,7 @@ export default function NewGateSystem() {
         <h1 className="font-bold text-3xl md:text-4xl tracking-tight mb-4">
           출입통제 시스템
         </h1>
-        <p className="text-lg leading-relaxed md:text-xl md:leading-relaxed tracking-tighter break-keep text-black/70 mb-8 sm:mb-12 lg:mb-16">
+        <p className="sm:text-lg sm:leading-normal md:text-xl md:leading-relaxed tracking-tighter break-keep text-black/70 mb-8 sm:mb-12 lg:mb-16">
           출입통제 시스템은 실시간으로 작업자의 출입 기록을 관리하고, 비인가자의
           출입을 차단함으로써 작업자들의 안전을 보호합니다. 현장의 보안 관리와
           작업자들의 안전까지 예방하고 보호할 수 있습니다.

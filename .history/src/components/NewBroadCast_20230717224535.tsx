@@ -14,7 +14,7 @@ export default function NewBroadCast() {
         <h1 className="font-bold text-3xl md:text-4xl tracking-tight mb-4">
           방송시스템
         </h1>
-        <p className="text-lg leading-relaxed md:text-xl md:leading-relaxed tracking-tighter break-keep text-black/70 mb-8 sm:mb-12 lg:mb-16">
+        <p className="sm:text-lg sm:leading-normal md:text-xl md:leading-relaxed tracking-tighter break-keep text-black/70 mb-8 sm:mb-12 lg:mb-16">
           방송 시스템을 구축하여 근로자가 있는 어느 곳이든 현장 사무실에서 전체,
           구역별, 지정 구간 등을 설정하여 경고 방송 및 안내 방송을 송출할 수
           있습니다.
