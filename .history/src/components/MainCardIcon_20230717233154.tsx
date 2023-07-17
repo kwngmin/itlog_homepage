@@ -22,11 +22,11 @@ export default function MainCardIcon({ cardNum, cardText, colStart }: Props) {
     <div
       className={`${colStart} overflow-hidden rounded-xl aspect-4/3 bg-red-500 flex-col justify-center items-center pb-2`}
     >
-      <h2 className="text-4xl lg:text-5xl font-bold text-white h-12 lg:h-16">
+      <h2 className="text-4xl lg:text-5xl font-bold text-white h-12 sm:h-16 lg:h-20">
         {cardNum}
         <span className="font-normal text-white/70"></span>
       </h2>
-      <span className="text-xl md:text-2xl tracking-tighter text-white/80">
+      <span className="text-xl sm:text-2xl md:text-3xl tracking-tighter text-white/80">
         {cardText}
       </span>
     </div>

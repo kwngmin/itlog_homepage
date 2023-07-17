@@ -9,7 +9,7 @@ export default function Instance() {
         <h1 className="w-fit leading-tight break-keep text-3xl sm:text-4xl font-bold tracking-tight">
         시공사례
       </h1>
-      <div className='flex items-center justify-center px-5 h-10 rounded-full font-medium tracking-tighter text-red-500 bg-red-50'>더 보기</div>
+      <div className='flex items-center justify-center px-5 h-8 rounded-full font-medium tracking-tighter text-red-500 bg-red-50'>더 보기</div>
         </div>
       <div className="flex gap-4 overflow-x-auto lg:bg-transparent pb-4 lg:pt-0 rounded-2xl">
         {/* <div className="absolute z-20 bg-blue-500 h-full w-full"></div> */}
