@@ -5,7 +5,7 @@ import SolutionBannerBtn from "./SolutionBannerBtn";
 
 export default function TowerSystem() {
   return (
-    <div className="relative bg-red-50 rounded-2xl p-6 sm:p-8 md:p-12 lg:px-16 md:py-28 xl:px-20 my-60 flex flex-col md:flex-row justify-between items-center gap-8 md:gap-24 overflow-hidden">
+    <div className="relative bg-red-50 rounded-2xl p-6 pb-12 sm:p-8 md:p-12 md:pb-20 lg:px-16 md:py-28 xl:px-20 my-60 flex flex-col md:flex-row justify-between items-center gap-8 md:gap-24 overflow-hidden">
       <div className="flex-none grid grid-cols-4 md:grid-cols-2 gap-4 z-20 py-16 md:py-0 sm:py-24">
         <IconLabel
           icon={"/icons/cam.png"}
