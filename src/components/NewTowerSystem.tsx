@@ -38,7 +38,7 @@ export default function NewTowerSystem() {
           width={420}
           height={420}
           //   className="absolute top-1/2 -translate-y-1/2 w-full drop-shadow-xl"
-          className="absolute top-6 -left-4 object-cover h-full drop-shadow-xl"
+          className="absolute -left-6 mr-8 sm:mr-16 sm:scale-110 object-cover h-full drop-shadow-xl"
         />
       </div>
       <div className="flex flex-col w-full">
