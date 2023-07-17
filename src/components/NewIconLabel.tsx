@@ -7,13 +7,13 @@ interface Props {
 }
 export default function NewIconLabel({ icon, iconLabel, iconCss }: Props) {
   return (
-    <div className="bg-white/90 backdrop-blur-md p-5 rounded-3xl h-fit z-20">
+    <div className="flex w-full h-full z-20 relative">
       <Image
         src={icon}
         alt={iconLabel}
         width={56}
         height={56}
-        className={`${iconCss} lg:w-20`}
+        className={`${iconCss} bg-white/90 backdrop-blur-md p-6 lg:p-8 rounded-3xl absolute w-28 lg:w-32`}
       />
     </div>
   );

@@ -1,5 +1,4 @@
 import React from "react";
-import IconLabel from "@/components/IconLabel";
 import Image from "next/image";
 import SolutionBannerBtn from "./SolutionBannerBtn";
 import NewIconLabel from "./NewIconLabel";
@@ -26,12 +25,14 @@ export default function NewGateSystem() {
         <NewIconLabel
           icon={"/icons/face-id.png"}
           iconLabel={"안면인식 시스템"}
-          iconCss={""}
+          iconCss={"top-1/2 -translate-y-1/2 right-0"}
+          // iconCss={"top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/4"}
         />
         <NewIconLabel
           icon={"/icons/parking.png"}
           iconLabel={"차량통제 시스템"}
-          iconCss={""}
+          iconCss={"top-1/2 -translate-y-1/2 left-0"}
+          // iconCss={"top-1/2 -translate-y-1/2 right-1/2 translate-x-1/4"}
         />
         <Image
           src={"/images/focus.png"}
