@@ -41,7 +41,7 @@ export default function NewTowerSystem() {
           className="absolute object-cover object-right-top"
         />
       </div>
-      <div className="flex flex-col w-full sm:w-3/5 sm:pl-8">
+      <div className="flex flex-col w-full sm:w-3/5 sm:px-4">
         <h3 className="font-bold text-xl lg:text-2xl tracking-tight text-red-500 mb-8 md:mt-0 md:mb-12 lg:mb-16">
           충돌/협착 위험 예측 및 경고
         </h3>

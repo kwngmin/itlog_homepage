@@ -7,7 +7,7 @@ import sounds from "../../public/images/sounds.png";
 export default function NewBroadCast() {
   return (
     <div className="flex flex-col items-center sm:flex-row justify-between md:items-center gap-6 sm:gap-10 my-60">
-      <div className="flex flex-col w-full sm:w-3/5 sm:pl-8">
+      <div className="flex flex-col w-full sm:w-3/5 sm:px-4">
         <h3 className="font-bold text-xl lg:text-2xl tracking-tight text-red-500 mb-8 md:mt-0 md:mb-12 lg:mb-16">
           비상상황시 신속한 대응
         </h3>
