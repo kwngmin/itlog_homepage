@@ -6,7 +6,7 @@ import NewIconLabel from "./NewIconLabel";
 export default function NewSafety() {
   return (
     <div className="flex flex-col items-center sm:flex-row justify-between md:items-center gap-6 sm:gap-10 my-60">
-      <div className="relative overflow-hidden rounded-2xl flex sm:flex-col justify-center items-center gap-4 bg-yellow-50 w-full sm:w-2/5 aspect-video sm:aspect-square lg:h-[420px] ">
+      <div className="relative overflow-hidden rounded-2xl flex sm:flex-col justify-center items-center gap-4 bg-yellow-50 w-full sm:w-2/5 aspect-video sm:aspect-3/4 md:aspect-square lg:h-[420px] ">
         <div className="flex flex-row sm:flex-col gap-4 px-4 z-20 items-center">
           <div className="shrink w-fit">
             <NewIconLabel
@@ -37,17 +37,17 @@ export default function NewSafety() {
           className="absolute -left-1/4"
         />
       </div>
-      <div className="flex flex-col w-full sm:w-3/5 sm:px-8">
+      <div className="flex flex-col w-full sm:w-3/5 sm:pl-8">
         <h3 className="font-bold text-xl lg:text-2xl tracking-tight text-red-500 mb-8 md:mt-0 md:mb-12 lg:mb-16">
-          충돌/협착 위험 예측 및 경고
+          건설산업 최적화 솔루션
         </h3>
         <h1 className="font-bold text-3xl md:text-4xl tracking-tight mb-4">
-          타워크레인 통합안전
+          안전 관리 CCTV
         </h1>
         <p className="sm:text-lg sm:leading-normal md:text-xl md:leading-relaxed tracking-tighter break-keep text-black/70 mb-8 sm:mb-12 lg:mb-16">
-          T/C 통합안전 시스템을 통해 충돌, 협착, 전도 사고를 사전에
-          예방하며,실시간으로 위험 요소를 화면 및 음성으로 안내하여 지속적인
-          안전 작업 환경을 조성합니다.
+          안전 관리 CCTV를 설치하여 현장의 넓은 범위, 위험지역, 각종 장비
+          등으로부터 잠재적인 위험 요소를 모니터링하여 작업자들의 안전을
+          보호합니다.
         </p>
         <SolutionBannerBtn />
       </div>
