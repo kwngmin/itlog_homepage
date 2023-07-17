@@ -18,15 +18,13 @@ export default function HelpDesk() {
         <li className="flex items-center">
           <div className="flex justify-center bg-gray-800 text-white font-medium w-8 h-8 rounded-full py-1 mr-2">
             T
-          </div><span className='font-medium mr-2 text-gray-400'>전화</span>
-          {/* <div className='sm:hidden h-4 mx-2 border-l-2 border-gray-300'/> */}
+          </div><span className='font-medium mr-2 text-gray-400'>전화</span><div className='sm:hidden h-4 mx-2 border-l-2 border-gray-300'/>
           02-859-2064
         </li>
         <li className="flex items-center">
           <div className="flex justify-center bg-gray-800 text-white font-medium w-8 h-8 rounded-full py-1 mr-2">
             F
-          </div><span className='font-medium mr-2 text-gray-400'>팩스</span>
-          {/* <div className='sm:hidden h-4 mx-2 border-l-2 border-gray-300'/> */}
+          </div><span className='font-medium mr-2 text-gray-400'>팩스</span><div className='sm:hidden h-4 mx-2 border-l-2 border-gray-300'/>
           02-859-2065
         </li>
         <li className="flex items-center">
