@@ -50,11 +50,18 @@ export default function TowerSystem() {
         className="hidden md:flex absolute md:-left-12 lg:-left-20 md:top-20 lg:-top-12 xl: w-[640px] md:w-[380px] lg:w-[520px]"
       />
       <Image
+        src={"/images/crane-wide.png"}
+        alt=""
+        width={420}
+        height={420}
+        className="sm:flex md:hidden absolute -top-4 sm:-top-8 -left-16 sm:-left-8 w-full"
+      />
+      <Image
         src={"/images/crane-small.png"}
         alt=""
         width={420}
         height={420}
-        className="md:hidden absolute -top-4 sm:-top-8 -left-16 sm:-left-8 w-[1080px]"
+        className="sm:hidden absolute -top-4 sm:-top-8 -left-16 sm:-left-8 w-[1080px]"
       />
     </div>
   );
