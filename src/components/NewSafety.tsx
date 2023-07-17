@@ -34,7 +34,7 @@ export default function NewSafety() {
           width={480}
           height={480}
           //   fill
-          className="absolute -left-1/4"
+          className="absolute scale-125"
         />
       </div>
       <div className="flex flex-col w-full sm:w-3/5 sm:px-4">

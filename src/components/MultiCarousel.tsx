@@ -5,15 +5,7 @@ import CarouselBtn from "@/components/CarouselBtn";
 
 export default function MultiCarousel() {
   return (
-    <>
-      <div className="my-4 flex gap-3 bg-red-50 sm:bg-transparent rounded-full overflow-hidden overflow-x-auto">
-        <button className="bg-red-500 hover:bg-red-600 text-white font-medium px-6 rounded-full h-10">
-          BigData
-        </button>
-        <CarouselBtn btnName={"Deep Learning"} />
-        <CarouselBtn btnName={"Ai"} />
-        <CarouselBtn btnName={"Smart Safety"} />
-      </div>
+    <div className="mt-8">
       <div className="lg:hidden relative bg-black rounded-2xl overflow-hidden h-80 md:h-64 flex flex-col justify-center">
         <Image
           alt="itlog Logo"
@@ -40,8 +32,8 @@ export default function MultiCarousel() {
           className="object-cover object-right-top max-w-full "
         />
       </div>
-      <div className="hidden lg:flex py-4 md:py-8 my-4  bg-gradient-to-r from-gray-200 to-zinc-100 rounded-2xl gap-2 sm:gap-3 md:gap-4">
-        <div className="relative overflow-hidden w-20 rounded-r-2xl bg-gradient-to-b from-slate-800 to-blue-800 drop-shadow-lg opacity-40" />
+      <div className="hidden lg:flex py-4 md:py-8 my-4  bg-gradient-to-r from-gray-200 to-red-100 rounded-2xl gap-2 sm:gap-3 md:gap-4">
+        <div className="relative overflow-hidden w-20 rounded-r-2xl bg-gradient-to-b from-slate-800 to-blue-800 drop-shadow-lg" />
         <div className="relative  bg-black rounded-2xl overflow-hidden h-72 flex flex-col justify-center drop-shadow-lg">
           <Image
             alt="itlog Logo"
@@ -69,8 +61,16 @@ export default function MultiCarousel() {
           />
         </div>
 
-        <div className="relative overflow-hidden w-20 rounded-l-2xl bg-gradient-to-b from-cyan-800 to-slate-800 opacity-40" />
+        <div className="relative overflow-hidden w-20 rounded-l-2xl bg-gradient-to-b from-cyan-800 to-slate-800" />
       </div>
-    </>
+      <div className="my-4 flex gap-3 bg-red-50 sm:bg-transparent rounded-full overflow-hidden overflow-x-auto">
+        <button className="bg-red-500 hover:bg-red-600 text-white font-medium px-6 rounded-full h-10">
+          BigData
+        </button>
+        <CarouselBtn btnName={"Deep Learning"} />
+        <CarouselBtn btnName={"Ai"} />
+        <CarouselBtn btnName={"Smart Safety"} />
+      </div>
+    </div>
   );
 }

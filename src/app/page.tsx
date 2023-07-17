@@ -12,6 +12,8 @@ import NewTowerSystem from "@/components/NewTowerSystem";
 import NewSensors from "@/components/NewSensors";
 import NewBroadCast from "@/components/NewBroadCast";
 import NewSafety from "@/components/NewSafety";
+import Instance from "@/components/Instance";
+import HelpDesk from "@/components/HelpDesk";
 
 export default function Home() {
   return (
@@ -25,7 +27,8 @@ export default function Home() {
         <NewSensors />
         <NewSafety />
         <NewBroadCast />
-        <div className="h-[10px] bg-sky-100" />
+        <Instance />
+        <HelpDesk />
       </BodyWrapper>
     </>
   );
