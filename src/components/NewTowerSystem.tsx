@@ -31,14 +31,12 @@ export default function NewTowerSystem() {
             iconCss={""}
           />
         </div>
-
         <Image
           src={"/images/tower-crane.png"}
           alt=""
           width={420}
           height={420}
-          //   className="absolute top-1/2 -translate-y-1/2 w-full drop-shadow-xl"
-          className="absolute mr-16 sm:mr-16 sm:scale-110 object-cover w-full"
+          className="absolute mr-16 sm:mr-16 sm:mt-6 sm:scale-110 object-cover w-full"
         />
       </div>
       <div className="flex flex-col w-full">
