@@ -6,7 +6,7 @@ import lh from "../../public/logos/lh.svg";
 export default function InstanceCard() {
   return (
     <div className="flex-none lg:flex-auto">
-      <div className="flex flex-col items-start gap-3 shrink py-6 w-80 lg:w-full">
+      <div className="flex flex-col items-start gap-3 shrink py-4 w-96 lg:w-full">
         <Image
           src={lh}
           width={10}

@@ -7,7 +7,7 @@ export default function Instance() {
       <h1 className="leading-tight break-keep text-3xl sm:text-4xl font-bold tracking-tight">
         시공사례
       </h1>
-      <div className="flex gap-4 overflow-x-auto bg-gray-100 border border-gray-300 lg:bg-transparent mt-6 pb-4 lg:pt-0 rounded-2xl px-12 lg:px-0">
+      <div className="flex gap-4 overflow-x-auto border border-gray-300 lg:bg-transparent mt-6 pb-4 lg:pt-0 rounded-2xl px-8 lg:px-0">
         <InstanceCard />
         <InstanceCard />
         <InstanceCard />
