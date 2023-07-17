@@ -13,7 +13,7 @@ export default function NewIconLabel({ icon, iconLabel, iconCss }: Props) {
         alt={iconLabel}
         width={56}
         height={56}
-        className={`${iconCss}`}
+        className={`${iconCss} lg:w-20`}
       />
     </div>
   );

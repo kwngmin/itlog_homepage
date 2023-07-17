@@ -34,11 +34,11 @@ export default function NewGateSystem() {
           iconCss={""}
         />
         <Image
-          src={"/images/focusGreen.png"}
+          src={"/images/focus.png"}
           alt=""
           width={420}
           height={420}
-          className="absolute top-1/2 -translate-y-1/2 mt-2 w-8/12 sm:w-5/6"
+          className="absolute top-1/2 -translate-y-1/2 w-10/12 sm:w-5/6 drop-shadow-xl"
         />
       </div>
     </div>

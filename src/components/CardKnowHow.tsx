@@ -5,7 +5,7 @@ import MainCardPhoto from "./MainCardPhoto";
 export default function CardKnowHow() {
   return (
     <div className="flex flex-col gap-4 my-60">
-      <h1 className="text-3xl sm:text-4xl w-full sm:max-w-lg tracking-tighter leading-normal sm:leading-normal text-black/70">
+      <h1 className="text-3xl sm:text-4xl w-full tracking-tighter leading-normal sm:leading-normal text-black/60">
         기술은 따라 할 수 있어도 <br />
         <b className="text-black break-keep leading-normal">
           숙련된 기술자의 <strong className="text-red-500">깊은 노하우</strong>
