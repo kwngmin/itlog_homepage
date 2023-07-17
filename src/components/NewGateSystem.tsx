@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import SolutionBannerBtn from "./SolutionBannerBtn";
 import NewIconLabel from "./NewIconLabel";
+import focus from "../../public/images/focus.png";
 
 export default function NewGateSystem() {
   return (
@@ -35,7 +36,7 @@ export default function NewGateSystem() {
           // iconCss={"top-1/2 -translate-y-1/2 right-1/2 translate-x-1/4"}
         />
         <Image
-          src={"/images/focus.png"}
+          src={focus}
           alt=""
           width={420}
           height={420}

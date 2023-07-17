@@ -2,11 +2,12 @@ import React from "react";
 import Image from "next/image";
 import SolutionBannerBtn from "./SolutionBannerBtn";
 import NewIconLabel from "./NewIconLabel";
+import crane from "../../public/images/crane.png";
 
 export default function NewTowerSystem() {
   return (
     <div className="flex flex-col items-center sm:flex-row justify-between md:items-center gap-6 sm:gap-10 my-60">
-      <div className="relative rounded-2xl flex sm:flex-col justify-center items-center gap-4 bg-orange-100 w-full aspect-video sm:aspect-square lg:h-[420px] ">
+      <div className="relative overflow-hidden rounded-2xl flex sm:flex-col justify-center items-center gap-4 bg-orange-100 w-full aspect-video sm:aspect-square lg:h-[420px] ">
         <div className="flex gap-4 ">
           <NewIconLabel
             icon={"/icons/cam.png"}

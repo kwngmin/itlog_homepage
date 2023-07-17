@@ -9,6 +9,7 @@ import SafetyCCTV from "@/components/SafetyCCTV";
 import BroadCast from "@/components/BroadCast";
 import NewGateSystem from "@/components/NewGateSystem";
 import NewTowerSystem from "@/components/NewTowerSystem";
+import NewSensors from "@/components/NewSensors";
 
 export default function Home() {
   return (
@@ -19,8 +20,9 @@ export default function Home() {
         <CarouselSolution />
         <NewGateSystem />
         <NewTowerSystem />
+        <NewSensors />
         {/* <TowerSystem /> */}
-        <Sensors />
+        {/* <Sensors /> */}
         <SafetyCCTV />
         <BroadCast />
         <div className="h-[10px] bg-sky-100" />
