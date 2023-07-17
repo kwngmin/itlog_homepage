@@ -7,7 +7,7 @@ interface Props {
 export default function MainCardIcon({ cardNum, cardText, colStart }: Props) {
   return (
     <div
-      className={`${colStart} overflow-hidden rounded-xl aspect-4/3 bg-red-500 flex-col justify-center items-center`}
+      className={`${colStart} overflow-hidden rounded-xl aspect-4/3 bg-red-500 flex-col justify-center items-center pb-2 md:pb-4`}
     >
       <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white h-12 sm:h-16 lg:h-20">
         {cardNum}

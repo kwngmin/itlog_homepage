@@ -7,6 +7,7 @@ import TowerSystem from "@/components/TowerSystem";
 import Sensors from "@/components/Sensors";
 import SafetyCCTV from "@/components/SafetyCCTV";
 import BroadCast from "@/components/BroadCast";
+import NewGateSystem from "@/components/NewGateSystem";
 
 export default function Home() {
   return (
@@ -15,7 +16,7 @@ export default function Home() {
       <BodyWrapper>
         <CardKnowHow />
         <CarouselSolution />
-        <GateSystem />
+        <NewGateSystem />
         <TowerSystem />
         <Sensors />
         <SafetyCCTV />
