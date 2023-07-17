@@ -32,10 +32,10 @@ export default function NewTowerSystem() {
           />
         </div>
         <Image
-          src={"/images/crane.png"}
+          src={"/images/tower-crane.png"}
           alt=""
           fill
-          className="absolute object-cover sm:object-none sm:object-right-top"
+          className="absolute object-cover sm:object-right-top"
         />
       </div>
       <div className="flex flex-col w-full">
