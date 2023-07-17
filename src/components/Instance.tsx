@@ -3,7 +3,8 @@ import InstanceCard from "./InstanceCard";
 
 export default function Instance() {
   return (
-    <div className="my-60 relative ">
+    <div className="relative my-60">
+      <div className="select-none lg:hidden absolute z-20 bg-gradient-to-r from-transparent to-white w-1/2 sm:w-1/3 md:w-1/5 right-0 h-full"></div>
       <h1 className="leading-tight break-keep text-3xl sm:text-4xl font-bold tracking-tight">
         시공사례
       </h1>
@@ -13,7 +14,6 @@ export default function Instance() {
         <InstanceCard />
         <InstanceCard />
       </div>
-      <div className="absolute z-20 bg-gradient-to-r from-transparent to-white w-1/2 right-0 h-full"></div>
     </div>
   );
 }
