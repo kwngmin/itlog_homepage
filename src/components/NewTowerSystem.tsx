@@ -6,30 +6,30 @@ import NewIconLabel from "./NewIconLabel";
 export default function NewTowerSystem() {
   return (
     <div className="flex flex-col items-center sm:flex-row justify-between md:items-center gap-6 sm:gap-10 my-60">
-      <div className="relative overflow-hidden rounded-2xl justify-center items-center gap-4 z-20 bg-red-100 w-full aspect-video sm:aspect-square lg:h-[420px] grid grid-cols-2">
+      <div className="relative overflow-hidden rounded-2xl flex justify-center items-center gap-4 z-20 py-8 md:py-0 sm:py-4 bg-orange-100 w-full aspect-video sm:aspect-square lg:h-[420px] order-first sm:order-last">
         {/* <div className="flex gap-4 z-20 py-8 md:py-0 sm:py-4 order-first md:order-last"> */}
         <NewIconLabel
           icon={"/icons/cam.png"}
           iconLabel={"후크 하방 카메라"}
-          iconCss={"right-0 bottom-0"}
+          iconCss={""}
         />
         <NewIconLabel
           icon={"/icons/siren.png"}
           iconLabel={"후크 하방 경보기"}
-          iconCss={"left-0 bottom-0"}
+          iconCss={""}
         />
         <NewIconLabel
           icon={"/icons/mirror.png"}
           iconLabel={"충돌방지 시스템"}
-          iconCss={"right-0 top-0"}
+          iconCss={""}
         />
         <NewIconLabel
           icon={"/icons/light.png"}
           iconLabel={"투광등 제어 시스템"}
-          iconCss={"left-0 top-0"}
+          iconCss={""}
         />
         <Image
-          src={"/images/tower-crane.png"}
+          src={"/images/crane.png"}
           alt=""
           width={420}
           height={420}
