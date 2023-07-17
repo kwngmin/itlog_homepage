@@ -15,10 +15,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ko">
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
       {/* <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css' /> */}
-      <body className={`flex flex-col h-screen relative`}>
+      <body className={`relative flex flex-col h-screen`}>
         <Header />
         <MainWrapper>{children}</MainWrapper>
       </body>

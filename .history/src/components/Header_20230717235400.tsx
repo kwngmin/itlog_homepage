@@ -6,12 +6,9 @@ export default function Header() {
     <div className="flex justify-center border-b z-20 fixedbg-white">
       <div className="flex items-center px-6 md:px-10 xl:px-4 w-[1536px] justify-between h-[72px]">
         <div className='flex items-center'>
-          <div className='sm:hidden w-12 h-12 mr-3 flex items-center justify-center rounded-lg'>
-
-<span className="material-symbols-rounded">
+<span className="material-symbols-outlined h-24 w-24">
 menu
 </span>
-          </div>
 <Image src={itlog} width={10} height={10} priority alt='' className='h-12 w-auto'/>
         </div>
         <ul className="hidden sm:flex items-center gap-1 tracking-tight font-medium">

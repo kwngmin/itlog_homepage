@@ -7,7 +7,7 @@ export default function HelpDesk() {
         고객센터
       </h1>
       <div className="my-4">
-        <p className="text-2xl font-medium tracking-tighter mb-1">
+        <p className="text-2xl font-medium leading-relaced tracking-tighter">
           운영시간 09:00 - 18:00
         </p>
         <p className="text-lg tracking-tighter text-black/60 font-medium">
@@ -35,10 +35,10 @@ export default function HelpDesk() {
         </li>
       </ul>
       <ul className="flex flex-col sm:flex-row my-8 gap-4 text-2xl font-medium tracking-tighter">
-        <li className="flex h-20 sm:h-24 w-full border-2 border-gray-300 rounded-xl items-center px-8">
+        <li className="flex h-20 sm:h-24 w-full border-2 border-gray-300 rounded-xl items-center px-12">
           <span className="mr-4">아이콘</span>원격지원
         </li>
-        <li className="flex h-20 sm:h-24 w-full border-2 border-gray-300 rounded-xl items-center px-8">
+        <li className="flex h-20 sm:h-24 w-full border-2 border-gray-300 rounded-xl items-center px-12">
           <span className="mr-4">아이콘</span>상담문의
         </li>
       </ul>
