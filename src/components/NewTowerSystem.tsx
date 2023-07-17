@@ -6,7 +6,7 @@ import NewIconLabel from "./NewIconLabel";
 export default function NewTowerSystem() {
   return (
     <div className="flex flex-col items-center sm:flex-row justify-between md:items-center gap-6 sm:gap-10 my-60">
-      <div className="relative overflow-hidden rounded-2xl flex sm:flex-col justify-center items-center gap-4 z-20 py-8 px-4  md:py-0 sm:py-4 bg-orange-100 w-full aspect-video sm:aspect-square lg:h-[420px] ">
+      <div className="relative rounded-2xl flex sm:flex-col justify-center items-center gap-4 bg-orange-100 w-full aspect-video sm:aspect-square lg:h-[420px] ">
         <div className="flex gap-4 ">
           <NewIconLabel
             icon={"/icons/cam.png"}
@@ -32,10 +32,10 @@ export default function NewTowerSystem() {
           />
         </div>
         <Image
-          src={"/images/tower-crane.png"}
+          src={"/images/crane.png"}
           alt=""
           fill
-          className="absolute object-cover sm:object-right-top"
+          className="absolute object-cover object-right-top"
         />
       </div>
       <div className="flex flex-col w-full">
