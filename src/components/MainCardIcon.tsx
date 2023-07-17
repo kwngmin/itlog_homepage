@@ -4,20 +4,18 @@ interface Props {
   cardText: string;
   colStart: string;
 }
-export default function MainCardIcon({
-  cardNum,
-  cardText,
-  colStart,
-}: Props) {
+export default function MainCardIcon({ cardNum, cardText, colStart }: Props) {
   return (
     <div
       className={`${colStart} overflow-hidden rounded-xl aspect-4/3 bg-red-500 flex-col justify-center items-center`}
     >
-      <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white sm:my-2">
+      <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white h-12 sm:h-16 lg:h-20">
         {cardNum}
         <span className="font-normal text-white/70"></span>
       </h2>
-      <span className="text-xl sm:text-2xl tracking-tight text-white/80">{cardText}</span>
+      <span className="text-xl sm:text-2xl md:text-3xl tracking-tighter text-white/80">
+        {cardText}
+      </span>
     </div>
   );
 }
