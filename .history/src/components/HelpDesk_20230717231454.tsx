@@ -34,7 +34,7 @@ export default function HelpDesk() {
           ok@it-log.co.kr
         </li>
       </ul>
-      <ul className="flex flex-col sm:flex-row my-8 gap-4 text-2xl font-medium tracking-tighter">
+      <ul className="flex flex-col sm:flex-row my-6 gap-4 text-2xl font-medium tracking-tighter">
         <li className="flex h-20 sm:h-24 w-full border-2 border-gray-300 rounded-xl items-center px-12">
           <span className="mr-4">아이콘</span>원격지원
         </li>

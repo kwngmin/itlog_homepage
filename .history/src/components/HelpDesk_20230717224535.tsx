@@ -14,31 +14,31 @@ export default function HelpDesk() {
           점심시간 12:00 - 13:00 (토/일/공휴일 휴무)
         </p>
       </div>
-      <ul className="flex flex-col sm:flex-row gap-4 sm:gap-8 text-black/70">
+      <ul className="flex flex-col md:flex-row gap-4 md:gap-8 text-black/70">
         <li className="flex items-center">
           <div className="flex justify-center bg-gray-800 text-white font-medium w-8 h-8 rounded-full py-1 mr-2">
             T
-          </div><span className='font-medium mr-2 text-gray-400'>전화</span><div className='sm:hidden h-4 mx-2 border-l-2 border-gray-300'/>
+          </div>
           02-859-2064
         </li>
         <li className="flex items-center">
           <div className="flex justify-center bg-gray-800 text-white font-medium w-8 h-8 rounded-full py-1 mr-2">
             F
-          </div><span className='font-medium mr-2 text-gray-400'>팩스</span><div className='sm:hidden h-4 mx-2 border-l-2 border-gray-300'/>
+          </div>
           02-859-2065
         </li>
         <li className="flex items-center">
           <div className="flex justify-center bg-gray-800 text-white font-medium w-8 h-8 rounded-full py-1 mr-2">
             M
-          </div><span className='font-medium mr-2 text-gray-400'>메일</span><div className='sm:hidden h-4 mx-2 border-l-2 border-gray-300'/>
+          </div>
           ok@it-log.co.kr
         </li>
       </ul>
-      <ul className="flex flex-col sm:flex-row my-8 gap-4 text-2xl font-medium tracking-tighter">
-        <li className="flex h-20 sm:h-24 w-full border-2 border-gray-300 rounded-xl items-center px-12">
+      <ul className="flex my-8 gap-4 text-2xl font-medium tracking-tighter">
+        <li className="flex h-28 w-full border-2 border-gray-300 rounded-xl items-center px-12">
           <span className="mr-4">아이콘</span>원격지원
         </li>
-        <li className="flex h-20 sm:h-24 w-full border-2 border-gray-300 rounded-xl items-center px-12">
+        <li className="flex h-28 w-full border-2 border-gray-300 rounded-xl items-center px-12">
           <span className="mr-4">아이콘</span>상담문의
         </li>
       </ul>
