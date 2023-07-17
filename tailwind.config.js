@@ -9,6 +9,7 @@ module.exports = {
     extend: {
       aspectRatio: {
         '4/3': '4 / 3',
+        '3/4': '3 / 4',
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',

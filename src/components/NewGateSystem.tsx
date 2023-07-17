@@ -2,6 +2,7 @@ import React from "react";
 import IconLabel from "@/components/IconLabel";
 import Image from "next/image";
 import SolutionBannerBtn from "./SolutionBannerBtn";
+import NewIconLabel from "./NewIconLabel";
 
 export default function NewGateSystem() {
   return (
@@ -20,14 +21,14 @@ export default function NewGateSystem() {
         </p>
         <SolutionBannerBtn />
       </div>
-      <div className="relative overflow-hidden rounded-2xl flex justify-center items-center gap-4 z-20 py-8 md:py-0 sm:py-4 bg-green-100 w-full aspect-4/3 md:aspect-square lg:h-[420px] order-first sm:order-last">
+      <div className="relative overflow-hidden rounded-2xl flex justify-center items-center gap-4 z-20 py-8 md:py-0 sm:py-4 bg-green-100 w-full aspect-video sm:aspect-square lg:h-[420px] order-first sm:order-last">
         {/* <div className="flex gap-4 z-20 py-8 md:py-0 sm:py-4 order-first md:order-last"> */}
-        <IconLabel
+        <NewIconLabel
           icon={"/icons/face-id.png"}
           iconLabel={"안면인식 시스템"}
           iconCss={""}
         />
-        <IconLabel
+        <NewIconLabel
           icon={"/icons/parking.png"}
           iconLabel={"차량통제 시스템"}
           iconCss={""}
@@ -37,7 +38,7 @@ export default function NewGateSystem() {
           alt=""
           width={420}
           height={420}
-          className="absolute top-1/2 -translate-y-1/2 mt-3 w-9/12 sm:w-5/6"
+          className="absolute top-1/2 -translate-y-1/2 mt-2 w-8/12 sm:w-5/6"
         />
       </div>
     </div>
