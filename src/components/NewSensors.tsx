@@ -21,33 +21,35 @@ export default function NewSensors() {
         </p>
         <SolutionBannerBtn />
       </div>
-      <div className="relative overflow-hidden rounded-2xl flex sm:flex-col justify-center items-center gap-4 bg-sky-50 w-full aspect-video sm:aspect-square lg:h-[420px] order-first sm:order-last">
-        <div className="flex gap-4 ">
-          <NewIconLabel
-            icon={"/icons/sound-waves.png"}
-            iconLabel={"소음 측정기"}
-            iconCss={""}
-          />
-          <NewIconLabel
-            icon={"/icons/gas-mask.png"}
-            iconLabel={"유해가스 측정기"}
-            iconCss={""}
-          />
-        </div>
-        <div className="flex gap-4">
-          <NewIconLabel
-            icon={"/icons/mask.png"}
-            iconLabel={"미세먼지 측정기"}
-            iconCss={""}
-          />
-          <NewIconLabel
-            icon={"/icons/anemometer.png"}
-            iconLabel={"풍향풍속계"}
-            iconCss={""}
-          />
+      <div className="relative overflow-hidden rounded-2xl flex items-center justify-center bg-sky-50 w-full aspect-video sm:aspect-square order-first sm:order-last">
+        <div className="flex sm:flex-col justify-center items-center gap-4 px-4">
+          <div className="shrink flex gap-4 ">
+            <NewIconLabel
+              icon={"/icons/sound-waves.png"}
+              iconLabel={"소음 측정기"}
+              iconCss={""}
+            />
+            <NewIconLabel
+              icon={"/icons/gas-mask.png"}
+              iconLabel={"유해가스 측정기"}
+              iconCss={""}
+            />
+          </div>
+          <div className="shrink flex gap-4">
+            <NewIconLabel
+              icon={"/icons/mask.png"}
+              iconLabel={"미세먼지 측정기"}
+              iconCss={""}
+            />
+            <NewIconLabel
+              icon={"/icons/anemometer.png"}
+              iconLabel={"풍향풍속계"}
+              iconCss={""}
+            />
+          </div>
         </div>
         <Image
-          src={"/images/blueWaves.png"}
+          src={"/images/sensor-wave.png"}
           alt=""
           width={480}
           height={480}
