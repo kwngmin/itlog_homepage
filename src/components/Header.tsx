@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import itlog from "../../public/itlog.svg";
+import itlog from "../../public/logos/itlog.svg";
 import Link from "next/link";
 export default function Header() {
   return (
@@ -20,6 +20,10 @@ export default function Header() {
               className="h-12 w-auto select-none"
             />
           </Link>
+          <div className="ml-3 border-l border-gray-300 pl-3 hidden lg:flex text-sm leading-tight text-gray-500">
+            For the intelligent
+            <br /> IT world!
+          </div>
         </div>
         <nav className="hidden sm:flex items-center gap-1 tracking-tight font-medium">
           <button className="h-[44px] px-3 rounded-md md:hover:bg-gray-200">

@@ -1,9 +1,9 @@
 import React from "react";
 
-export default function ConstructionCasePage() {
+export default function HistoryPage() {
   return (
     <div className="flex justify-center items-center w-full h-full text-4xl font-medium pb-20">
-      시공사례
+      기업연혁
     </div>
   );
 }

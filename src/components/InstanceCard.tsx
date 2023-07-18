@@ -39,7 +39,7 @@ export default function InstanceCard({
         />
         <div className="flex flex-col gap-1">
           <h3 className="text-xl font-medium tracking-tighter">{subject}</h3>
-          <p className="text-black/70 flex gap-2 items-center">
+          <p className="text-black/70 flex gap-2 items-center tracking-tighter">
             <span className="font-medium">{client}</span>
             <span className="h-3 border-l-2 border-gray-300"></span>
             <span>{place}</span>
