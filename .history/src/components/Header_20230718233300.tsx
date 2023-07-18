@@ -63,7 +63,7 @@ export default function Header() {
             <button
               onMouseDown={() => foldMenu()}
               className={`${
-                foldStatus === true && "bg-gray-100"
+                foldStatus === true && "bg-gray-100 text-xl"
               } sm:hidden w-12 h-12 mr-3 flex items-center justify-center rounded-xl select-none`}
             >
               <span className="material-symbols-rounded">

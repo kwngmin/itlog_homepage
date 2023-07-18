@@ -63,7 +63,7 @@ export default function Header() {
             <button
               onMouseDown={() => foldMenu()}
               className={`${
-                foldStatus === true && "bg-gray-100"
+                foldStatus === true && "bg-gray-100 text-xl"
               } sm:hidden w-12 h-12 mr-3 flex items-center justify-center rounded-xl select-none`}
             >
               <span className="material-symbols-rounded">
@@ -85,7 +85,7 @@ export default function Header() {
               <div className="font-medium text-black/80 text-lg">메뉴 닫기</div>
             )}
 
-            <div className="ml-3 border-l border-gray-300 pl-3 hidden lg:flex text-sm leading-tight text-gray-500">
+            <div className="ml-3 border-l border-gray-300 pl-3 flex sm:hidden lg:flex text-sm leading-tight text-gray-500">
               For the intelligent
               <br /> IT world!
             </div>
