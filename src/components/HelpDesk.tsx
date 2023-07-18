@@ -1,5 +1,8 @@
 import Link from "next/link";
 import React from "react";
+import help from "../../public/icons/help.png";
+import connect from "../../public/icons/desktop.png";
+import Image from "next/image";
 
 export default function HelpDesk() {
   return (
@@ -41,16 +44,30 @@ export default function HelpDesk() {
       <ul className="flex flex-col sm:flex-row my-8 gap-4 text-2xl font-medium tracking-tighter">
         <Link
           href={"http://helpu.kr/itlog/"}
-          className="flex h-20 sm:h-24 w-full border-2 border-gray-300 rounded-xl items-center px-8 select-none"
+          className="flex h-20 sm:h-24 w-full bg-gray-100 md:hover:bg-gray-200 md:hover:ring ring-gray-400 rounded-xl items-center px-8 select-none"
           target="_blank"
         >
-          <span className="mr-4">아이콘</span>원격지원
+          <Image
+            src={connect}
+            alt="원격지원 아이콘"
+            width={40}
+            height={40}
+            className="mr-6"
+          />
+          원격지원
         </Link>
         <Link
           href={"/estimate"}
-          className="flex h-20 sm:h-24 w-full border-2 border-gray-300 rounded-xl items-center px-8 select-none"
+          className="flex h-20 sm:h-24 w-full bg-gray-100 md:hover:bg-gray-200 md:hover:ring ring-gray-400 rounded-xl items-center px-8 select-none"
         >
-          <span className="mr-4">아이콘</span>상담문의
+          <Image
+            src={help}
+            alt="원격지원 아이콘"
+            width={40}
+            height={40}
+            className="mr-6"
+          />
+          상담문의
         </Link>
       </ul>
     </div>
