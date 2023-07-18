@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React from "react";
-import help from "../../public/icons/help.png";
+import help from "../../public/icons/chat.png";
 import connect from "../../public/icons/desktop.png";
 import Image from "next/image";
 
@@ -18,7 +18,7 @@ export default function HelpDesk() {
           점심시간 12:00 - 13:00 (토/일/공휴일 휴무)
         </p>
       </div>
-      <ul className="flex flex-col sm:flex-row gap-4 sm:gap-8 text-black/70">
+      <ul className="flex flex-col md:flex-row gap-4 md:gap-8 text-black/70">
         <li className="flex items-center">
           <div className="flex justify-center bg-gray-800 text-white font-medium w-8 h-8 rounded-full py-1 mr-2">
             T
@@ -44,28 +44,28 @@ export default function HelpDesk() {
       <ul className="flex flex-col sm:flex-row my-8 gap-4 text-2xl font-medium tracking-tighter">
         <Link
           href={"http://helpu.kr/itlog/"}
-          className="flex h-20 sm:h-24 w-full bg-gray-100 md:hover:bg-red-500 ring ring-gray-200 md:hover:ring-0 rounded-xl items-center px-8 select-none hover:text-white"
+          className="flex h-20 sm:h-24 w-full bg-gray-100 md:hover:bg-red-500 ring ring-gray-200 md:hover:ring-0 rounded-xl items-center px-6 md:px-10 select-none md:hover:text-white"
           target="_blank"
         >
           <Image
             src={connect}
             alt="원격지원 아이콘"
-            width={40}
-            height={40}
+            width={44}
+            height={44}
             className="mr-6"
           />
           원격지원
         </Link>
         <Link
           href={"/estimate"}
-          className="flex h-20 sm:h-24 w-full bg-gray-100 md:hover:bg-red-500 ring ring-gray-200 md:hover:ring-0 rounded-xl items-center px-8 select-none hover:text-white"
+          className="flex h-20 sm:h-24 w-full bg-gray-100 md:hover:bg-red-500 ring ring-gray-200 md:hover:ring-0 rounded-xl items-center px-6 md:px-10 select-none md:hover:text-white"
         >
           <Image
             src={help}
             alt="원격지원 아이콘"
-            width={40}
-            height={40}
-            className="mr-6"
+            width={48}
+            height={48}
+            className="mr-5"
           />
           상담문의
         </Link>
