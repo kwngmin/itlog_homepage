@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <section className="grow bg-slate-800 text-white/50 pt-16 pb-24 text-[15px]">
+    <section className="grow bg-slate-800 text-white/50 pt-16 pb-40 text-[15px]">
       <BodyWrapper>
         <div className="flex flex-col gap-8">
           <nav className="flex flex-col sm:flex-row gap-8">

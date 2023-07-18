@@ -77,7 +77,7 @@ export default function Header() {
       </div>
       {foldStatus && (
         <>
-          <div className="absolute flex flex-col px-2 py-6 w-full grow top-[72px] bg-white z-40 gap-4 overflow-y-auto">
+          <div className="absolute flex flex-col px-3 py-6 w-full grow top-[72px] bg-white z-40 gap-4 overflow-y-auto">
             <IntroCompany
               foldStatus={foldStatus}
               setFoldStatus={setFoldStatus}
