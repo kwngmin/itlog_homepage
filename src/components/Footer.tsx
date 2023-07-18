@@ -8,8 +8,8 @@ export default function Footer() {
   return (
     <section className="grow bg-slate-800 text-white/50 pt-16 pb-24 text-[15px]">
       <BodyWrapper>
-        <div className="flex flex-col gap-20">
-          <nav className="hidden lg:flex">
+        <div className="flex flex-col gap-8">
+          <nav className="flex flex-col sm:flex-row gap-8">
             <section className="flex-1 flex flex-col gap-2">
               <span className="text-white/80 font-medium text-base">회사</span>
               <Link className="hover:text-red-500" href={"/greetings"}>
@@ -68,7 +68,7 @@ export default function Footer() {
             </section>
           </nav>
           <div className="flex flex-col lg:flex-row items-start gap-4 font-normal lg:items-center">
-            <div className="flex items-center">
+            <div className="items-center hidden">
               <Image
                 src={itlogBw}
                 width={120}
@@ -76,18 +76,23 @@ export default function Footer() {
                 alt="itlog-bw"
                 className="w-20 opacity-40"
               />{" "}
-              <div className="text-white/40 ml-3 border-l border-gray-600 pl-3 lg:hidden text-sm leading-tight text-gray-500">
+              <div className="text-white/40 ml-3 border-l border-gray-600 pl-3 text-sm leading-tight text-gray-500">
                 For the intelligent
                 <br /> IT world!
               </div>
             </div>
-            <div className="hidden lg:block h-10 border-l border-white/20 mx-3"></div>
-            <div className="text-white/40 tracking-tight text-sm md:text-base break-keep">
-              <p className="text-white/80">(주)아이티로그</p>
-              <p>
-                서울특별시 구로구 디지털로33길 28 우림이비즈센터1차 308호 08377
-              </p>
-            </div>
+            {/* <div className="hidden lg:block h-10 border-l border-white/20 mx-3"></div> */}
+          </div>
+          <div className="text-white/40 tracking-tight text-sm md:text-base break-keep">
+            <p className="text-white/80">(주)아이티로그</p>
+            <p className="hidden sm:block">
+              08377 서울특별시 구로구 디지털로33길 28 우림이비즈센터1차 308호
+              (구로동 170-5)
+            </p>
+            <p className="block sm:hidden">
+              08377 서울특별시 구로구 디지털로33길 28 <br />
+              우림이비즈센터1차 308호 (구로동 170-5)
+            </p>
           </div>
           <p className="text-white/40 tracking-tight text-sm md:text-base break-keep">
             Copyright ⓒ2023 ITLOG CO., LTD. All Rights Reserved.
