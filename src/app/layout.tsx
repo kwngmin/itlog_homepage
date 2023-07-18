@@ -3,6 +3,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import MainWrapper from "@/components/MainWrapper";
 import Head from "next/head";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -25,10 +26,14 @@ export default function RootLayout({
           rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
         />
+        <meta name="format-detection" content="telephone=no" />
       </head>
       <body className={`flex flex-col h-screen relative`}>
         <Header />
-        <MainWrapper>{children}</MainWrapper>
+        <MainWrapper>
+          {children}
+          <Footer />
+        </MainWrapper>
       </body>
     </html>
   );
