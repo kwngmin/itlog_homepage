@@ -44,7 +44,7 @@ export default function HelpDesk() {
       <ul className="flex flex-col sm:flex-row my-8 gap-4 text-2xl font-medium tracking-tighter">
         <Link
           href={"http://helpu.kr/itlog/"}
-          className="flex h-20 sm:h-24 w-full bg-gray-100 md:hover:bg-red-500 ring ring-gray-200 md:hover:ring-0 rounded-xl items-center px-6 md:px-10 select-none md:hover:text-white"
+          className="flex h-20 sm:h-24 w-full bg-gray-100 md:hover:bg-red-500 ring ring-gray-200 md:hover:ring-0 rounded-xl items-center px-6 sm:px-10 select-none md:hover:text-white"
           target="_blank"
         >
           <Image

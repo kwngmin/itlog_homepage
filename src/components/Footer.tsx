@@ -6,17 +6,22 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <section className="grow bg-slate-800 h-80 text-white/70">
+    <section className="grow bg-slate-800 h-80 text-white/70 py-16">
       <BodyWrapper>
-        <nav className="flex justify-between">
-          <section className="flex flex-col">
+        <nav className="hidden lg:flex">
+          <section className="flex-1 flex flex-col">
             <span>회사</span>
             <Link href={"/greetings"}>인사말</Link>
             <Link href={"/history"}>기업연혁</Link>
             <Link href={"/vision"}>기업이념</Link>
             <Link href={"/location"}>오시는 길</Link>
           </section>
-          <section className="flex flex-col">
+          <section className="flex-1 flex flex-col">
+            <span>솔루션</span>
+            <Link href={"/solution"}>통합IoT솔루션</Link>
+            <Link href={"/case"}>시공사례</Link>
+          </section>
+          <section className="flex-1 flex flex-col">
             <span>제품</span>
             <Link href={"/products/gate"}>출입통제 시스템</Link>
             <Link href={"/products/tower-crane"}>타워크레인 통합안전</Link>
@@ -24,12 +29,7 @@ export default function Footer() {
             <Link href={"/products/cctv"}>안전관리 CCTV</Link>
             <Link href={"/products/broadcast"}>방송시스템</Link>
           </section>
-          <section className="flex flex-col">
-            <span>솔루션</span>
-            <Link href={"/solution"}>통합IoT솔루션</Link>
-            <Link href={"/case"}>시공사례</Link>
-          </section>
-          <section className="flex flex-col">
+          <section className="flex-1 flex flex-col">
             <span>정책</span>
             <Link href={"/terms"}>이용약관</Link>
             <Link href={"/policy"}>개인정보취급방침</Link>
