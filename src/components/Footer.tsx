@@ -54,7 +54,7 @@ export default function Footer() {
             <div className="text-white/40 tracking-tight text-sm md:text-base break-keep">
               <p>(주)아이티로그</p>
               <p>
-                08377 서울특별시 구로구 디지털로33길 28 우림이비즈센터1차 308호
+                서울특별시 구로구 디지털로33길 28 우림이비즈센터1차 308호 08377
               </p>
             </div>
           </div>
