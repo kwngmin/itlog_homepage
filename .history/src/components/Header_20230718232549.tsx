@@ -85,7 +85,7 @@ export default function Header() {
               <div className="font-medium text-black/80 text-lg">메뉴 닫기</div>
             )}
 
-            <div className="ml-3 border-l border-gray-300 pl-3 flex sm:hidden lg:flex text-sm leading-tight text-gray-500">
+            <div className="ml-3 border-l border-gray-300 pl-3 hidden lg:flex text-sm leading-tight text-gray-500">
               For the intelligent
               <br /> IT world!
             </div>

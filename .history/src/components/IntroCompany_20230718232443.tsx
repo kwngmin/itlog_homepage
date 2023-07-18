@@ -13,7 +13,7 @@ interface Props {
 export default function IntroCompany({ foldStatus, setFoldStatus }: Props) {
   return (
     <div>
-      <h3 className="text-lg font-bold text-black/70 px-2">아이티로그 회사 소개</h3>
+      <h3 className="text-lg font-bold text-black/70 px-2">(주)아이티로그 회사 소개</h3>
       <div className="grid grid-cols-4 gap-3 items-start justify-between w-full my-3">
         <MobileMenu
           menuIcon={greetings}
