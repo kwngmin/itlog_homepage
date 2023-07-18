@@ -89,7 +89,7 @@ export default function Footer() {
               08377 서울특별시 구로구 디지털로33길 28 우림이비즈센터1차 308호
               (구로동 170-5)
             </p>
-            <p className="block sm:hidden text-sm md:text-base">
+            <p className="block sm:hidden text-sm">
               08377 서울특별시 구로구 디지털로33길 28 우림이비즈센터1차 <br />
               308호 (구로동 170-5)
             </p>
