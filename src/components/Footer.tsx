@@ -51,14 +51,14 @@ export default function Footer() {
               </div>
             </div>
             <div className="hidden lg:block h-10 border-l border-white/20 mx-3"></div>
-            <div className="text-white/40">
+            <div className="text-white/40 tracking-tight text-sm md:text-base break-keep">
               <p>(주)아이티로그</p>
               <p>
                 08377 서울특별시 구로구 디지털로33길 28 우림이비즈센터1차 308호
               </p>
             </div>
           </div>
-          <p className="text-white/40">
+          <p className="text-white/40 tracking-tight text-sm md:text-base break-keep">
             Copyright ⓒ2023 ITLOG CO., LTD. All Rights Reserved.
           </p>
         </div>
