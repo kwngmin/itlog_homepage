@@ -28,16 +28,21 @@ export default function Header() {
                 {foldStatus === false ? "menu" : "close"}
               </span>
             </button>
-            <Link href={"/"}>
-              <Image
-                src={itlog}
-                width={10}
-                height={10}
-                priority
-                alt=""
-                className="h-12 w-auto select-none"
-              />
-            </Link>
+            {foldStatus === false ? (
+              <Link href={"/"}>
+                <Image
+                  src={itlog}
+                  width={10}
+                  height={10}
+                  priority
+                  alt=""
+                  className="h-12 w-auto select-none"
+                />
+              </Link>
+            ) : (
+              <div className="font-medium text-black/70 text-lg">메뉴 닫기</div>
+            )}
+
             <div className="ml-3 border-l border-gray-300 pl-3 hidden lg:flex text-sm leading-tight text-gray-500">
               For the intelligent
               <br /> IT world!
@@ -72,7 +77,7 @@ export default function Header() {
       </div>
       {foldStatus && (
         <>
-          <div className="absolute flex flex-col px-4 py-6 w-full grow top-[72px] bg-white z-40 gap-4 overflow-y-auto">
+          <div className="absolute flex flex-col px-2 py-6 w-full grow top-[72px] bg-white z-40 gap-4 overflow-y-auto">
             <IntroCompany
               foldStatus={foldStatus}
               setFoldStatus={setFoldStatus}
