@@ -28,7 +28,7 @@ export default function MobileMenu({
         width={64}
         height={64}
         alt=""
-        className="w-20 p-5 bg-white rounded-3xl mb-2"
+        className="w-20 p-5 bg-white rounded-3xl mb-2 mx-auto"
       />
       <span className="font-medium tracking-tighter">{menuLabel}</span>
     </button>

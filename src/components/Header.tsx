@@ -3,8 +3,9 @@ import React, { useState } from "react";
 import Image from "next/image";
 import itlog from "../../public/logos/itlog.svg";
 import Link from "next/link";
-import greetings from "../../public/icons/cam.png";
-import MobileMenu from "./MobileMenu";
+import IntroCompany from "./IntroCompany";
+import IntroProducts from "./IntroProdcts";
+import AboutSolutions from "./AboutSolutions";
 
 export default function Header() {
   const foldMenu = () => {
@@ -71,41 +72,19 @@ export default function Header() {
       </div>
       {foldStatus && (
         <>
-          <div className="absolute flex flex-col px-8 py-20 w-full top-[72px] bg-blue-200 z-40">
-            <div>
-              <h3 className="text-lg font-bold text-black/70">회사 소개</h3>
-              <div className="flex justify-between w-full my-3">
-                <MobileMenu
-                  menuIcon={greetings}
-                  menuLabel={"인사말"}
-                  menuLink={"/greetings"}
-                  foldStatus={foldStatus}
-                  setFoldStatus={setFoldStatus}
-                />
-                <MobileMenu
-                  menuIcon={greetings}
-                  menuLabel={"기업연혁"}
-                  menuLink={"/history"}
-                  foldStatus={foldStatus}
-                  setFoldStatus={setFoldStatus}
-                />
-                <MobileMenu
-                  menuIcon={greetings}
-                  menuLabel={"기업이념"}
-                  menuLink={"/vision"}
-                  foldStatus={foldStatus}
-                  setFoldStatus={setFoldStatus}
-                />
-                <MobileMenu
-                  menuIcon={greetings}
-                  menuLabel={"오시는 길"}
-                  menuLink={"/location"}
-                  foldStatus={foldStatus}
-                  setFoldStatus={setFoldStatus}
-                />
-              </div>
-            </div>
-            <div>솔루션</div>
+          <div className="absolute flex flex-col px-4 py-6 w-full grow top-[72px] bg-white z-40 gap-4 overflow-y-auto">
+            <IntroCompany
+              foldStatus={foldStatus}
+              setFoldStatus={setFoldStatus}
+            />
+            <IntroProducts
+              foldStatus={foldStatus}
+              setFoldStatus={setFoldStatus}
+            />
+            <AboutSolutions
+              foldStatus={foldStatus}
+              setFoldStatus={setFoldStatus}
+            />
           </div>
           <div
             onMouseDown={() => foldMenu()}
