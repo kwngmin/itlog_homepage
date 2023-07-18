@@ -12,7 +12,7 @@ export default function MainFull() {
         className="object-cover"
       />
       <div className="absolute w-full h-1/3 -bottom-1 z-30 bg-gradient-to-b from-transparent to-white" />
-      <div className="z-10 px-4 sm:px-6 md:px-10 xl:px-0 w-[1024px] pb-32 sm:pb-40 md:pb-20">
+      <div className="z-10 px-4 sm:px-6 md:px-10 xl:px-0 w-[1024px] pb-20 sm:pb-28 md:pb-8">
         <h1 className="hidden md:flex text-4xl md:text-5xl font-bold tracking-tighter mb-2 md:mb-3 lg:mb-4 xl:mb-5 break-keep">
           건설은 안전하게 안전은 스마트하게
         </h1>
