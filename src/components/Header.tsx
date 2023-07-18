@@ -4,7 +4,7 @@ import itlog from "../../public/logos/itlog.svg";
 import Link from "next/link";
 export default function Header() {
   return (
-    <div className="flex justify-center border-b z-20 fixedbg-white">
+    <div className="flex w-full justify-center border-b z-20 fixed bg-white">
       <div className="flex items-center pl-2 pr-6 sm:px-6 md:px-10 xl:px-8 w-[1536px] justify-between h-[72px]">
         <div className="flex items-center">
           <div className="sm:hidden w-12 h-12 mr-3 flex items-center justify-center rounded-lg select-none">
