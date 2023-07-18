@@ -36,15 +36,21 @@ export default function Footer() {
               <Link href={"/policy"}>개인정보취급방침</Link>
             </section>
           </nav>
-          <div className="flex gap-4 font-normal items-center">
-            <Image
-              src={itlogBw}
-              width={120}
-              height={80}
-              alt="itlog-bw"
-              className="w-20 opacity-40"
-            />
-            <div className="h-10 border-l border-white/20 mx-3"></div>
+          <div className="flex flex-col lg:flex-row items-start gap-4 font-normal lg:items-center">
+            <div className="flex items-center">
+              <Image
+                src={itlogBw}
+                width={120}
+                height={80}
+                alt="itlog-bw"
+                className="w-20 opacity-40"
+              />{" "}
+              <div className="text-white/40 ml-3 border-l border-gray-600 pl-3 lg:hidden text-sm leading-tight text-gray-500">
+                For the intelligent
+                <br /> IT world!
+              </div>
+            </div>
+            <div className="hidden lg:block h-10 border-l border-white/20 mx-3"></div>
             <div className="text-white/40">
               <p>(주)아이티로그</p>
               <p>
