@@ -28,7 +28,7 @@ export default function IntroProducts({ foldStatus, setFoldStatus }: Props) {
         />
         <MobileMenu
           menuIcon={greetings}
-          menuLabel={"T/C 통합안전"}
+          menuLabel={"타워크레인 통합안전"}
           menuLink={"/products/tower-crane"}
           foldStatus={foldStatus}
           setFoldStatus={setFoldStatus}
