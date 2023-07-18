@@ -83,15 +83,15 @@ export default function Footer() {
             </div>
             {/* <div className="hidden lg:block h-10 border-l border-white/20 mx-3"></div> */}
           </div>
-          <div className="text-white/40 tracking-tight text-sm md:text-base break-keep">
+          <div className="text-white/40 tracking-tight break-keep">
             <p className="text-white/80">(주)아이티로그</p>
             <p className="hidden sm:block">
               08377 서울특별시 구로구 디지털로33길 28 우림이비즈센터1차 308호
               (구로동 170-5)
             </p>
-            <p className="block sm:hidden">
-              08377 서울특별시 구로구 디지털로33길 28 <br />
-              우림이비즈센터1차 308호 (구로동 170-5)
+            <p className="block sm:hidden text-sm md:text-base">
+              08377 서울특별시 구로구 디지털로33길 28 우림이비즈센터1차 <br />
+              308호 (구로동 170-5)
             </p>
           </div>
           <p className="text-white/40 tracking-tight text-sm md:text-base break-keep">
