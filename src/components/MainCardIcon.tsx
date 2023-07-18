@@ -37,7 +37,7 @@ export default function MainCardIcon({
       <p className="sm:text-lg md:text-xl lg:text-2xl tracking-tighter text-white font-medium lg:font-normal mb-2 md:mb-3">
         {cardText}
       </p>
-      <div className="sm:text-lg bg-red-700 rounded-full px-6 md:px-8 h-10 md:h-12 lg:h-14 md:pb-1 flex justify-center items-center md:text-xl lg:text-2xl tracking-tighter text-white ">
+      <div className="sm:text-lg bg-red-600 rounded-full px-6 md:px-8 h-10 md:h-12 lg:h-14 md:pb-1 flex justify-center items-center md:text-xl lg:text-2xl tracking-tighter text-white ">
         {cardSubText}
       </div>
     </div>
