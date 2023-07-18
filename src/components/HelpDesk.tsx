@@ -21,15 +21,13 @@ export default function HelpDesk() {
             T
           </div>
           <span className="font-medium mr-2 text-gray-400">전화</span>
-          {/* <div className='sm:hidden h-4 mx-2 border-l-2 border-gray-300'/> */}
-          02-859-2064
+          <Link href={"tel:02-859-2064"}>02-859-2064</Link>
         </li>
         <li className="flex items-center">
           <div className="flex justify-center bg-gray-800 text-white font-medium w-8 h-8 rounded-full py-1 mr-2">
             F
           </div>
           <span className="font-medium mr-2 text-gray-400">팩스</span>
-          {/* <div className='sm:hidden h-4 mx-2 border-l-2 border-gray-300'/> */}
           02-859-2065
         </li>
         <li className="flex items-center">
@@ -37,8 +35,7 @@ export default function HelpDesk() {
             M
           </div>
           <span className="font-medium mr-2 text-gray-400">메일</span>
-          {/* <div className='sm:hidden h-4 mx-2 border-l-2 border-gray-300'/> */}
-          ok@it-log.co.kr
+          <Link href={"mailto:ok@it-log.co.kr"}>ok@it-log.co.kr</Link>
         </li>
       </ul>
       <ul className="flex flex-col sm:flex-row my-8 gap-4 text-2xl font-medium tracking-tighter">
