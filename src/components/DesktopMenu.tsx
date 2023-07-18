@@ -1,9 +1,23 @@
-import React from "react";
+import React, { Dispatch, SetStateAction } from "react";
+import { useRouter } from "next/navigation";
 
-export default function DesktopMenu() {
+interface Props {
+  name: string;
+  route: string;
+  setPopUpMenu: Dispatch<SetStateAction<boolean>>;
+}
+export default function DesktopMenu({ name, route, setPopUpMenu }: Props) {
+  const router = useRouter();
+  const clickEvent = () => {
+    router.push(route);
+    setPopUpMenu(false);
+  };
   return (
-    <div className="bg-sky-100 hover:bg-sky-300 h-12 flex items-center px-4">
-      출입통제 시스템
-    </div>
+    <button
+      onMouseDown={() => clickEvent()}
+      className="hover:bg-slate-100 text-black/70 hover:text-black font-medium h-16 flex items-center px-6 tracking-tight select-none"
+    >
+      {name}
+    </button>
   );
 }

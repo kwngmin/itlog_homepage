@@ -7,18 +7,17 @@ import IntroCompany from "./IntroCompany";
 import IntroProducts from "./IntroProdcts";
 import AboutSolutions from "./AboutSolutions";
 import DesktopMenu from "./DesktopMenu";
-
+// interface Props {
+//   name: string;
+//   route: string;
+// }
 export default function Header() {
-  const foldMenu = () => {
-    setFoldStatus(!foldStatus);
-    console.log(foldStatus);
-  };
-  const popMenu = (menu: string) => {
-    setPopUpMenu(menuList.filter((item) => item.name === menu));
-  };
   const [foldStatus, setFoldStatus] = useState(false);
-  const [popUpMenu, setPopUpMenu] = useState([]);
-  const menuList = [
+  const [popUpMenu, setPopUpMenu] = useState(false);
+  const [menuList, setMenuList] = useState<{ name: string; route: string }[]>(
+    []
+  );
+  const menuData = [
     {
       name: "회사 소개",
       lists: [
@@ -46,6 +45,16 @@ export default function Header() {
       ],
     },
   ];
+  const foldMenu = () => {
+    setFoldStatus(!foldStatus);
+    console.log(foldStatus);
+  };
+  const popMenu = (menu: string) => {
+    const result = menuData.filter((item) => item.name === menu);
+    setMenuList(result[0].lists);
+    console.log(menuList);
+    setPopUpMenu(true);
+  };
   return (
     <>
       <div className="flex w-full justify-center border-b z-50 fixed bg-white/80 backdrop-blur-md">
@@ -82,29 +91,33 @@ export default function Header() {
             </div>
           </div>
           <nav className="absolute right-1/2 translate-x-1/2 hidden sm:flex items-center gap-1 tracking-tight font-medium">
-            <button className="h-[44px] px-3 rounded-md md:hover:bg-gray-200">
+            <button
+              onMouseDown={() => popMenu("회사 소개")}
+              className="h-12 px-4 select-none rounded-md md:hover:bg-gray-100"
+            >
               회사 소개
             </button>
             <button
-              className="h-[44px] px-3 rounded-md md:hover:bg-gray-200"
-              onMouseDown={() => popMenu("회사 소개")}
+              className="h-12 px-4 select-none rounded-md md:hover:bg-gray-100"
+              onMouseDown={() => popMenu("제품 소개")}
             >
               제품 소개
             </button>
-            <Link href={"/solution"}>
-              <button className="h-[44px] px-3 rounded-md md:hover:bg-gray-200">
-                솔루션
-              </button>
-            </Link>
+            <button
+              className="h-12 px-4 select-none rounded-md md:hover:bg-gray-100"
+              onMouseDown={() => popMenu("솔루션")}
+            >
+              솔루션
+            </button>
           </nav>
           <div className="flex gap-2 font-medium">
             <Link href={"http://helpu.kr/itlog/"} target="_blank">
-              <button className="hidden lg:block h-[44px] px-4 rounded-md text-white bg-slate-700 md:hover:bg-slate-600 select-none">
+              <button className="hidden lg:block h-12 px-4 rounded-md text-white bg-slate-700 md:hover:bg-slate-600 select-none">
                 원격지원
               </button>
             </Link>
             <Link href={"/estimate"}>
-              <button className="bg-red-500 hover:bg-red-600 h-[44px] px-4 text-white rounded-md select-none">
+              <button className="bg-red-500 hover:bg-red-600 h-12 px-4 text-white rounded-md select-none">
                 상담문의
               </button>
             </Link>
@@ -133,15 +146,24 @@ export default function Header() {
           />
         </section>
       )}
-      <section className="hidden relative">
-        <div className="absolute left-1/2 -translate-x-1/2 flex flex-col p-3 w-72 grow top-[72px] bg-yellow-200 z-40">
-          <DesktopMenu />
-          <DesktopMenu />
-          <DesktopMenu />
-          <DesktopMenu />
-          <DesktopMenu />
-        </div>
-      </section>
+      {popUpMenu && (
+        <section className="relative">
+          <div className="absolute left-1/2 -translate-x-1/2 flex flex-col py-4 w-72 grow top-16 bg-white ring-1 ring-slate-200 drop-shadow-2xl z-50 rounded-xl ">
+            {menuList.map((item) => (
+              <DesktopMenu
+                key={item.name}
+                name={item.name}
+                route={item.route}
+                setPopUpMenu={setPopUpMenu}
+              />
+            ))}
+          </div>
+          <div
+            onMouseDown={() => setPopUpMenu(false)}
+            className="absolute w-full h-screen z-30"
+          />
+        </section>
+      )}
     </>
   );
 }
