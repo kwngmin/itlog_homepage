@@ -65,7 +65,7 @@ export default function HelpDesk() {
             alt="원격지원 아이콘"
             width={48}
             height={48}
-            className="mr-5 w-10 md:w-12 h-auto"
+            className="mr-6 w-10 md:w-12 h-auto"
           />
           상담문의
         </Link>
