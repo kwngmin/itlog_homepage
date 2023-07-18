@@ -6,34 +6,65 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <section className="grow bg-slate-800 text-white/70 py-16">
+    <section className="grow bg-slate-800 text-white/50 pt-16 pb-24 text-[15px]">
       <BodyWrapper>
-        <div className="flex flex-col gap-12">
+        <div className="flex flex-col gap-20">
           <nav className="hidden lg:flex">
-            <section className="flex-1 flex flex-col gap-1">
-              <span className="text-white/40 font-medium">회사</span>
-              <Link href={"/greetings"}>인사말</Link>
-              <Link href={"/history"}>기업연혁</Link>
-              <Link href={"/vision"}>기업이념</Link>
-              <Link href={"/location"}>오시는 길</Link>
+            <section className="flex-1 flex flex-col gap-2">
+              <span className="text-white/80 font-medium text-base">회사</span>
+              <Link className="hover:text-red-500" href={"/greetings"}>
+                인사말
+              </Link>
+              <Link className="hover:text-red-500" href={"/history"}>
+                기업연혁
+              </Link>
+              <Link className="hover:text-red-500" href={"/vision"}>
+                기업이념
+              </Link>
+              <Link className="hover:text-red-500" href={"/location"}>
+                오시는 길
+              </Link>
             </section>
-            <section className="flex-1 flex flex-col gap-1">
-              <span className="text-white/40 font-medium">솔루션</span>
-              <Link href={"/solution"}>통합IoT솔루션</Link>
-              <Link href={"/case"}>시공사례</Link>
+            <section className="flex-1 flex flex-col gap-2">
+              <span className="text-white/80 font-medium text-base">
+                솔루션
+              </span>
+              <Link className="hover:text-red-500" href={"/solution"}>
+                통합IoT솔루션
+              </Link>
+              <Link className="hover:text-red-500" href={"/case"}>
+                시공사례
+              </Link>
             </section>
-            <section className="flex-1 flex flex-col gap-1">
-              <span className="text-white/40 font-medium">제품</span>
-              <Link href={"/products/gate"}>출입통제 시스템</Link>
-              <Link href={"/products/tower-crane"}>타워크레인 통합안전</Link>
-              <Link href={"/products/sensors"}>환경센서</Link>
-              <Link href={"/products/cctv"}>안전관리 CCTV</Link>
-              <Link href={"/products/broadcast"}>방송시스템</Link>
+            <section className="flex-1 flex flex-col gap-2">
+              <span className="text-white/80 font-medium text-base">제품</span>
+              <Link className="hover:text-red-500" href={"/products/gate"}>
+                출입통제 시스템
+              </Link>
+              <Link
+                className="hover:text-red-500"
+                href={"/products/tower-crane"}
+              >
+                타워크레인 통합안전
+              </Link>
+              <Link className="hover:text-red-500" href={"/products/sensors"}>
+                환경센서
+              </Link>
+              <Link className="hover:text-red-500" href={"/products/cctv"}>
+                안전관리 CCTV
+              </Link>
+              <Link className="hover:text-red-500" href={"/products/broadcast"}>
+                방송시스템
+              </Link>
             </section>
-            <section className="flex-1 flex flex-col gap-1">
-              <span className="text-white/40 font-medium">정책</span>
-              <Link href={"/terms"}>이용약관</Link>
-              <Link href={"/policy"}>개인정보취급방침</Link>
+            <section className="flex-1 flex flex-col gap-2">
+              <span className="text-white/80 font-medium text-base">정책</span>
+              <Link className="hover:text-red-500" href={"/terms"}>
+                이용약관
+              </Link>
+              <Link className="hover:text-red-500" href={"/policy"}>
+                개인정보취급방침
+              </Link>
             </section>
           </nav>
           <div className="flex flex-col lg:flex-row items-start gap-4 font-normal lg:items-center">
@@ -52,7 +83,7 @@ export default function Footer() {
             </div>
             <div className="hidden lg:block h-10 border-l border-white/20 mx-3"></div>
             <div className="text-white/40 tracking-tight text-sm md:text-base break-keep">
-              <p>(주)아이티로그</p>
+              <p className="text-white/80">(주)아이티로그</p>
               <p>
                 서울특별시 구로구 디지털로33길 28 우림이비즈센터1차 308호 08377
               </p>
