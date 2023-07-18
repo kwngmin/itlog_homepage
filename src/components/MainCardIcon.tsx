@@ -37,7 +37,7 @@ export default function MainCardIcon({
         {cardNum}
         <span className="text-red-700">{afterNum}</span>
       </h2>
-      <div className="sm:text-lg bg-red-700 rounded-full px-4 md:px-6 h-8 md:h-12 flex justify-center items-center md:text-xl lg:text-2xl tracking-tighter text-white ">
+      <div className="sm:text-lg bg-red-700 rounded-full px-4 md:px-6 h-8 md:h-10 lg:h-12 pb-0.5 flex justify-center items-center md:text-xl lg:text-2xl tracking-tighter text-white ">
         {cardSubText}
       </div>
     </div>
