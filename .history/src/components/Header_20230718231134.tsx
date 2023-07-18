@@ -63,8 +63,8 @@ export default function Header() {
             <button
               onMouseDown={() => foldMenu()}
               className={`${
-                foldStatus === true && "bg-gray-100 text-xl"
-              } sm:hidden w-12 h-12 mr-3 flex items-center justify-center rounded-xl select-none`}
+                foldStatus === true && "bg-gray-100 font-bold"
+              } sm:hidden w-12 h-12 mr-3 flex items-center justify-center rounded-lg select-none`}
             >
               <span className="material-symbols-rounded">
                 {foldStatus === false ? "menu" : "close"}
@@ -126,7 +126,7 @@ export default function Header() {
       </div>
       {foldStatus && (
         <section className="sm:hidden">
-          <div className="absolute flex flex-col px-3 pt-8 pb-12 w-full grow top-[72px] bg-gray-100 z-40 gap-4 overflow-y-auto">
+          <div className="absolute flex flex-col px-3 pt-6 pb-12 w-full grow top-[72px] bg-gray-100 z-40 gap-4 overflow-y-auto">
             <IntroCompany
               foldStatus={foldStatus}
               setFoldStatus={setFoldStatus}
