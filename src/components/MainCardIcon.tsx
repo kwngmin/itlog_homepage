@@ -33,7 +33,7 @@ export default function MainCardIcon({
       <span className="sm:text-lg md:text-xl lg:text-2xl tracking-tighter text-white/70">
         {cardText}
       </span>
-      <h2 className="text-4xl lg:text-5xl font-bold text-white mb-1 md:mb-2">
+      <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-1 md:mb-2">
         {cardNum}
         <span className="text-red-700">{afterNum}</span>
       </h2>
