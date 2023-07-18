@@ -24,14 +24,14 @@ export default function HelpDesk() {
             T
           </div>
           <span className="font-medium mr-2 text-gray-400">전화</span>
-          <Link href={"tel:02-859-2064"}>02-859-2064</Link>
+          <Link href={`tel:${"02-859-2064"}`}>02-859-2064</Link>
         </li>
         <li className="flex items-center">
           <div className="flex justify-center bg-gray-800 text-white font-medium w-8 h-8 rounded-full py-1 mr-2">
             F
           </div>
           <span className="font-medium mr-2 text-gray-400">팩스</span>
-          02-859-2065
+          <Link href={"tel:02-859-2065"}>02-859-2065</Link>
         </li>
         <li className="flex items-center">
           <div className="flex justify-center bg-gray-800 text-white font-medium w-8 h-8 rounded-full py-1 mr-2">
