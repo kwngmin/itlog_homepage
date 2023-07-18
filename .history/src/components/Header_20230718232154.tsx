@@ -58,7 +58,7 @@ export default function Header() {
   return (
     <>
       <div className="flex w-full justify-center border-b z-50 fixed bg-white/80 backdrop-blur-md">
-        <div className="flex items-center pl-2 pr-4 sm:px-6 md:px-10 xl:px-8 w-[1536px] justify-between h-[72px] relative">
+        <div className="flex items-center px-4 sm:px-6 md:px-10 xl:px-8 w-[1536px] justify-between h-[72px] relative">
           <div className="flex items-center">
             <button
               onMouseDown={() => foldMenu()}
