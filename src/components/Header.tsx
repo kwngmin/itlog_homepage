@@ -4,8 +4,8 @@ import itlog from "../../public/logos/itlog.svg";
 import Link from "next/link";
 export default function Header() {
   return (
-    <div className="flex w-full justify-center border-b z-20 fixed bg-white">
-      <div className="flex items-center pl-2 pr-6 sm:px-6 md:px-10 xl:px-8 w-[1536px] justify-between h-[72px]">
+    <div className="flex w-full justify-center border-b z-50 fixed bg-white/80 backdrop-blur-md">
+      <div className="flex items-center pl-2 pr-6 sm:px-6 md:px-10 xl:px-8 w-[1536px] justify-between h-[72px] relative">
         <div className="flex items-center">
           <div className="sm:hidden w-12 h-12 mr-3 flex items-center justify-center rounded-lg select-none">
             <span className="material-symbols-rounded">menu</span>
@@ -25,7 +25,7 @@ export default function Header() {
             <br /> IT world!
           </div>
         </div>
-        <nav className="hidden sm:flex items-center gap-1 tracking-tight font-medium">
+        <nav className="absolute right-1/2 translate-x-1/2 hidden sm:flex items-center gap-1 tracking-tight font-medium">
           <button className="h-[44px] px-3 rounded-md md:hover:bg-gray-200">
             회사소개
           </button>
