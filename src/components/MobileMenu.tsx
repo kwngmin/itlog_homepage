@@ -28,11 +28,11 @@ export default function MobileMenu({
         width={64}
         height={64}
         alt=""
-        className="w-20 p-5 bg-white rounded-3xl mb-2 mx-auto"
+        className="w-20 p-5 rounded-3xl mb-2 mx-auto bg-yellow-200"
       />
-      <span className="font-medium tracking-tighter text-sm text-black/70 break-keep">
+      <p className="font-medium tracking-tighter leading-slug text-sm text-black/70 break-keep">
         {menuLabel}
-      </span>
+      </p>
     </button>
   );
 }
