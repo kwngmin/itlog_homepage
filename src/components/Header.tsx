@@ -1,18 +1,51 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, MouseEvent } from "react";
 import Image from "next/image";
 import itlog from "../../public/logos/itlog.svg";
 import Link from "next/link";
 import IntroCompany from "./IntroCompany";
 import IntroProducts from "./IntroProdcts";
 import AboutSolutions from "./AboutSolutions";
+import DesktopMenu from "./DesktopMenu";
 
 export default function Header() {
   const foldMenu = () => {
     setFoldStatus(!foldStatus);
     console.log(foldStatus);
   };
+  const popMenu = (menu: string) => {
+    setPopUpMenu(menuList.filter((item) => item.name === menu));
+  };
   const [foldStatus, setFoldStatus] = useState(false);
+  const [popUpMenu, setPopUpMenu] = useState([]);
+  const menuList = [
+    {
+      name: "회사 소개",
+      lists: [
+        { name: "인사말", route: "/greetings" },
+        { name: "기업연혁", route: "/history" },
+        { name: "기업이념", route: "/vision" },
+        { name: "오시는 길", route: "/location" },
+      ],
+    },
+    {
+      name: "제품 소개",
+      lists: [
+        { name: "출입통제 시스템", route: "/products/gate" },
+        { name: "안전관리 CCTV", route: "/products/cctv" },
+        { name: "타워크레인 통합안전", route: "/products/tower-crane" },
+        { name: "환경센서", route: "/products/sensors" },
+        { name: "방송시스템", route: "/products/broadcast" },
+      ],
+    },
+    {
+      name: "솔루션",
+      lists: [
+        { name: "통합IoT솔루션", route: "/solution" },
+        { name: "시공사례", route: "/case" },
+      ],
+    },
+  ];
   return (
     <>
       <div className="flex w-full justify-center border-b z-50 fixed bg-white/80 backdrop-blur-md">
@@ -50,14 +83,17 @@ export default function Header() {
           </div>
           <nav className="absolute right-1/2 translate-x-1/2 hidden sm:flex items-center gap-1 tracking-tight font-medium">
             <button className="h-[44px] px-3 rounded-md md:hover:bg-gray-200">
-              회사소개
+              회사 소개
             </button>
-            <button className="h-[44px] px-3 rounded-md md:hover:bg-gray-200">
-              제품소개
+            <button
+              className="h-[44px] px-3 rounded-md md:hover:bg-gray-200"
+              onMouseDown={() => popMenu("회사 소개")}
+            >
+              제품 소개
             </button>
             <Link href={"/solution"}>
               <button className="h-[44px] px-3 rounded-md md:hover:bg-gray-200">
-                통합IoT솔루션
+                솔루션
               </button>
             </Link>
           </nav>
@@ -76,7 +112,7 @@ export default function Header() {
         </div>
       </div>
       {foldStatus && (
-        <>
+        <section className="sm:hidden">
           <div className="absolute flex flex-col px-3 py-6 w-full grow top-[72px] bg-white z-40 gap-4 overflow-y-auto">
             <IntroCompany
               foldStatus={foldStatus}
@@ -93,10 +129,19 @@ export default function Header() {
           </div>
           <div
             onMouseDown={() => foldMenu()}
-            className="absolute w-full h-screen z-30"
+            className="absolute bg-white/70 w-full h-screen z-30"
           />
-        </>
+        </section>
       )}
+      <section className="hidden relative">
+        <div className="absolute left-1/2 -translate-x-1/2 flex flex-col p-3 w-72 grow top-[72px] bg-yellow-200 z-40">
+          <DesktopMenu />
+          <DesktopMenu />
+          <DesktopMenu />
+          <DesktopMenu />
+          <DesktopMenu />
+        </div>
+      </section>
     </>
   );
 }

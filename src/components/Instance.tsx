@@ -17,7 +17,7 @@ export default function Instance() {
           시공사례
         </h1>
         <Link
-          href={"/construction-case"}
+          href={"/case"}
           className="flex items-center justify-center px-5 h-10 rounded-full font-medium tracking-tighter select-none text-red-500 bg-red-50 md:hover:bg-red-100"
         >
           더 보기
