@@ -30,7 +30,9 @@ export default function MobileMenu({
         alt=""
         className="w-20 p-5 bg-white rounded-3xl mb-2 mx-auto"
       />
-      <span className="font-medium tracking-tighter">{menuLabel}</span>
+      <span className="font-medium tracking-tighter text-sm text-black/70">
+        {menuLabel}
+      </span>
     </button>
   );
 }
