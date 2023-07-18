@@ -3,6 +3,7 @@ import Image from "next/image";
 import SolutionBannerBtn from "./SolutionBannerBtn";
 import NewIconLabel from "./NewIconLabel";
 import crane from "../../public/images/crane.png";
+import Link from "next/link";
 
 export default function NewTowerSystem() {
   return (
@@ -53,7 +54,9 @@ export default function NewTowerSystem() {
           예방하며,실시간으로 위험 요소를 화면 및 음성으로 안내하여 지속적인
           안전 작업 환경을 조성합니다.
         </p>
-        <SolutionBannerBtn />
+        <Link href={"/products/tower-crane"}>
+          <SolutionBannerBtn />
+        </Link>
       </div>
     </div>
   );

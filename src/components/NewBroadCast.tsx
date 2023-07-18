@@ -3,6 +3,7 @@ import Image from "next/image";
 import SolutionBannerBtn from "./SolutionBannerBtn";
 import NewIconLabel from "./NewIconLabel";
 import sounds from "../../public/images/sounds.png";
+import Link from "next/link";
 
 export default function NewBroadCast() {
   return (
@@ -19,7 +20,9 @@ export default function NewBroadCast() {
           구역별, 지정 구간 등을 설정하여 경고 방송 및 안내 방송을 송출할 수
           있습니다.
         </p>
-        <SolutionBannerBtn />
+        <Link href={"/products/broadcast"}>
+          <SolutionBannerBtn />
+        </Link>
       </div>
       <div className="relative overflow-hidden rounded-2xl flex justify-center items-center px-4 gap-4 z-20 py-8 md:py-0 sm:py-4 bg-violet-50 w-full sm:w-2/5 aspect-video sm:aspect-3/4 md:aspect-square lg:h-[420px] order-first sm:order-last">
         <NewIconLabel

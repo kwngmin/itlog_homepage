@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 export default function HelpDesk() {
@@ -18,32 +19,42 @@ export default function HelpDesk() {
         <li className="flex items-center">
           <div className="flex justify-center bg-gray-800 text-white font-medium w-8 h-8 rounded-full py-1 mr-2">
             T
-          </div><span className='font-medium mr-2 text-gray-400'>전화</span>
+          </div>
+          <span className="font-medium mr-2 text-gray-400">전화</span>
           {/* <div className='sm:hidden h-4 mx-2 border-l-2 border-gray-300'/> */}
           02-859-2064
         </li>
         <li className="flex items-center">
           <div className="flex justify-center bg-gray-800 text-white font-medium w-8 h-8 rounded-full py-1 mr-2">
             F
-          </div><span className='font-medium mr-2 text-gray-400'>팩스</span>
+          </div>
+          <span className="font-medium mr-2 text-gray-400">팩스</span>
           {/* <div className='sm:hidden h-4 mx-2 border-l-2 border-gray-300'/> */}
           02-859-2065
         </li>
         <li className="flex items-center">
           <div className="flex justify-center bg-gray-800 text-white font-medium w-8 h-8 rounded-full py-1 mr-2">
             M
-          </div><span className='font-medium mr-2 text-gray-400'>메일</span>
+          </div>
+          <span className="font-medium mr-2 text-gray-400">메일</span>
           {/* <div className='sm:hidden h-4 mx-2 border-l-2 border-gray-300'/> */}
           ok@it-log.co.kr
         </li>
       </ul>
       <ul className="flex flex-col sm:flex-row my-8 gap-4 text-2xl font-medium tracking-tighter">
-        <li className="flex h-20 sm:h-24 w-full border-2 border-gray-300 rounded-xl items-center px-8">
+        <Link
+          href={"http://helpu.kr/itlog/"}
+          className="flex h-20 sm:h-24 w-full border-2 border-gray-300 rounded-xl items-center px-8 select-none"
+          target="_blank"
+        >
           <span className="mr-4">아이콘</span>원격지원
-        </li>
-        <li className="flex h-20 sm:h-24 w-full border-2 border-gray-300 rounded-xl items-center px-8">
+        </Link>
+        <Link
+          href={"/estimate"}
+          className="flex h-20 sm:h-24 w-full border-2 border-gray-300 rounded-xl items-center px-8 select-none"
+        >
           <span className="mr-4">아이콘</span>상담문의
-        </li>
+        </Link>
       </ul>
     </div>
   );

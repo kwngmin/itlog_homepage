@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import SolutionBannerBtn from "./SolutionBannerBtn";
 import NewIconLabel from "./NewIconLabel";
+import Link from "next/link";
 // import crane from "../../public/images/crane.png";
 
 export default function NewSensors() {
@@ -19,7 +20,9 @@ export default function NewSensors() {
           측정값을 실시간으로 표출합니다. 어느 곳에서든 실시간 모니터링을 통해
           현장 내 환경 관리 및 작업자들의 건강과 안전을 보호합니다.
         </p>
-        <SolutionBannerBtn />
+        <Link href={"/products/sensors"}>
+          <SolutionBannerBtn />
+        </Link>
       </div>
       <div className="relative overflow-hidden rounded-2xl flex items-center justify-center bg-sky-50 w-full sm:w-2/5 aspect-video sm:aspect-3/4 md:aspect-square lg:h-[420px] order-first sm:order-last">
         <div className="flex sm:flex-col justify-center items-center gap-4 px-4">

@@ -3,6 +3,7 @@ import Image from "next/image";
 import SolutionBannerBtn from "./SolutionBannerBtn";
 import NewIconLabel from "./NewIconLabel";
 import focus from "../../public/images/focus.png";
+import Link from "next/link";
 
 export default function NewGateSystem() {
   return (
@@ -19,7 +20,9 @@ export default function NewGateSystem() {
           출입을 차단함으로써 작업자들의 안전을 보호합니다. 현장의 보안 관리와
           작업자들의 안전까지 예방하고 보호할 수 있습니다.
         </p>
-        <SolutionBannerBtn />
+        <Link href={"/products/gate"}>
+          <SolutionBannerBtn />
+        </Link>
       </div>
       <div className="relative overflow-hidden rounded-2xl flex justify-center items-center px-4 gap-4 z-20 py-8 md:py-0 sm:py-4 bg-green-50 w-full sm:w-2/5 aspect-video sm:aspect-3/4 md:aspect-square lg:h-[420px] order-first sm:order-last">
         <NewIconLabel

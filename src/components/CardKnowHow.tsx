@@ -16,22 +16,34 @@ export default function CardKnowHow() {
         <MainCardPhoto dataRoute={"/images/merit1.jpg"} />
         <MainCardIcon
           cardNum={3000}
-          cardText={"시스템 설치·시공"}
+          cardText={"통합IoT솔루션"}
+          cardSubText={"설치 · 시공"}
+          afterNum={"건"}
           colStart={"flex"}
         />
         <MainCardIcon
           cardNum={13}
-          cardText={"SW·HW 연구개발"}
+          cardText={"제품 및 기술"}
+          cardSubText={"연구 · 개발"}
+          afterNum={"년"}
           colStart={"flex sm:hidden"}
         />
         <MainCardPhoto dataRoute={"/images/merit2.jpg"} />
         <MainCardIcon
           cardNum={13}
-          cardText={"SW·HW 연구개발"}
+          cardText={"제품 및 기술"}
+          cardSubText={"연구 · 개발"}
+          afterNum={"년"}
           colStart={"hidden sm:flex "}
         />
         <MainCardPhoto dataRoute={"/images/merit3.jpg"} />
-        <MainCardIcon cardNum={62} cardText={"협력·공급 고객"} colStart={"flex"} />
+        <MainCardIcon
+          cardNum={62}
+          cardText={"동반성장 파트너"}
+          cardSubText={"협력 · 공급"}
+          afterNum={"개사"}
+          colStart={"flex"}
+        />
       </div>
     </div>
   );

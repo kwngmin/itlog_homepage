@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import SolutionBannerBtn from "./SolutionBannerBtn";
 import NewIconLabel from "./NewIconLabel";
+import Link from "next/link";
 
 export default function NewSafety() {
   return (
@@ -49,7 +50,9 @@ export default function NewSafety() {
           등으로부터 잠재적인 위험 요소를 모니터링하여 작업자들의 안전을
           보호합니다.
         </p>
-        <SolutionBannerBtn />
+        <Link href={"/products/cctv"}>
+          <SolutionBannerBtn />
+        </Link>
       </div>
     </div>
   );
