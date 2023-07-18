@@ -1,7 +1,10 @@
 import React, { Dispatch, SetStateAction } from "react";
 import MobileMenu from "./MobileMenu";
 
-import greetings from "../../public/icons/cam.png";
+import greetings from "../../public/icons/hi.png";
+import company from "../../public/icons/office-building.png";
+import brain from "../../public/icons/brain.png";
+import location from "../../public/icons/location-pin.png";
 
 interface Props {
   foldStatus: boolean;
@@ -20,21 +23,21 @@ export default function IntroCompany({ foldStatus, setFoldStatus }: Props) {
           setFoldStatus={setFoldStatus}
         />
         <MobileMenu
-          menuIcon={greetings}
+          menuIcon={company}
           menuLabel={"기업연혁"}
           menuLink={"/history"}
           foldStatus={foldStatus}
           setFoldStatus={setFoldStatus}
         />
         <MobileMenu
-          menuIcon={greetings}
+          menuIcon={brain}
           menuLabel={"기업이념"}
           menuLink={"/vision"}
           foldStatus={foldStatus}
           setFoldStatus={setFoldStatus}
         />
         <MobileMenu
-          menuIcon={greetings}
+          menuIcon={location}
           menuLabel={"오시는 길"}
           menuLink={"/location"}
           foldStatus={foldStatus}

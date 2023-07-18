@@ -28,7 +28,7 @@ export default function MobileMenu({
         width={64}
         height={64}
         alt=""
-        className="w-20 p-5 rounded-3xl mb-2 mx-auto bg-yellow-200"
+        className="w-20 p-5 rounded-3xl mb-2 mx-auto bg-gray-200/50"
       />
       <p className="font-medium tracking-tighter leading-slug text-sm text-black/70 break-keep">
         {menuLabel}
