@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function Header() {
   return (
     <div className="flex w-full justify-center border-b z-50 fixed bg-white/80 backdrop-blur-md">
-      <div className="flex items-center pl-2 pr-6 sm:px-6 md:px-10 xl:px-8 w-[1536px] justify-between h-[72px] relative">
+      <div className="flex items-center pl-2 pr-4 sm:px-6 md:px-10 xl:px-8 w-[1536px] justify-between h-[72px] relative">
         <div className="flex items-center">
           <div className="sm:hidden w-12 h-12 mr-3 flex items-center justify-center rounded-lg select-none">
             <span className="material-symbols-rounded">menu</span>
