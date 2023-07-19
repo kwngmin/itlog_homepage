@@ -7,7 +7,7 @@ import sensor from "../../public/icons/anemometer.png";
 import crane from "../../public/icons/crane.png";
 import cctv from "../../public/icons/cctv.png";
 import cone from "../../public/icons/traffic-cone.png";
-import solution from "../../public/icons/solution.png";
+import solution from "../../public/icons/iot.png";
 
 interface Props {
   foldStatus: boolean;
@@ -16,9 +16,11 @@ interface Props {
 export default function IntroProducts({ foldStatus, setFoldStatus }: Props) {
   return (
     <div>
-      <h3 className="text-lg font-bold text-black/70 px-2">솔루션 및 제품 소개</h3>
+      <h3 className="text-lg font-bold text-black/70 px-2 tracking-tighter">
+        솔루션 및 제품 소개
+      </h3>
       <div className="grid grid-cols-4 gap-x-3 gap-y-8 items-start justify-between w-full my-3">
-                <MobileMenu
+        <MobileMenu
           menuIcon={solution}
           menuLabel={"통합IoT솔루션"}
           menuLink={"/solution"}

@@ -1,16 +1,13 @@
 "use client";
 import React, { useState, MouseEvent } from "react";
+import { useRouter } from "next/navigation";
 import Image from "next/image";
 import itlog from "../../public/logos/itlog.svg";
 import Link from "next/link";
 import IntroCompany from "./IntroCompany";
 import IntroProducts from "./IntroProdcts";
-import AboutSolutions from "./AboutSolutions";
 import DesktopMenu from "./DesktopMenu";
-// interface Props {
-//   name: string;
-//   route: string;
-// }
+
 export default function Header() {
   const [foldStatus, setFoldStatus] = useState(false);
   const [popUpMenu, setPopUpMenu] = useState(false);
@@ -47,14 +44,21 @@ export default function Header() {
   ];
   const foldMenu = () => {
     setFoldStatus(!foldStatus);
-    // console.log(foldStatus);
   };
+
   const popMenu = (menu: string) => {
     const result = menuData.filter((item) => item.name === menu);
     setMenuList(result[0].lists);
-    // console.log(menuList);
     setPopUpMenu(true);
   };
+
+  const router = useRouter();
+  const pageMove = (route: string) => {
+    setPopUpMenu(false);
+    setFoldStatus(false);
+    router.push(route);
+  };
+
   return (
     <>
       <div className="flex w-full justify-center border-b z-50 fixed bg-white/80 backdrop-blur-md">
@@ -71,16 +75,16 @@ export default function Header() {
               </span>
             </button>
             {foldStatus === false ? (
-              <Link href={"/"}>
-                <Image
-                  src={itlog}
-                  width={10}
-                  height={10}
-                  priority
-                  alt=""
-                  className="h-10 sm:h-12 w-auto select-none"
-                />
-              </Link>
+              <Image
+                src={itlog}
+                width={10}
+                height={10}
+                priority
+                alt=""
+                className="h-10 sm:h-12 w-auto select-none"
+                onMouseDown={() => pageMove("/")}
+                role="button"
+              />
             ) : (
               <div className="font-medium text-black/80 text-lg">메뉴 닫기</div>
             )}
@@ -116,11 +120,12 @@ export default function Header() {
                 원격지원
               </button>
             </Link>
-            <Link href={"/estimate"}>
-              <button className="bg-red-500 hover:bg-red-600 h-12 px-4 text-white rounded-md select-none">
-                상담문의
-              </button>
-            </Link>
+            <button
+              onMouseDown={() => pageMove("/estimate")}
+              className="bg-red-500 hover:bg-red-600 h-12 px-4 text-white rounded-md select-none"
+            >
+              상담문의
+            </button>
           </div>
         </div>
       </div>
@@ -135,10 +140,6 @@ export default function Header() {
               foldStatus={foldStatus}
               setFoldStatus={setFoldStatus}
             />
-            {/* <AboutSolutions
-              foldStatus={foldStatus}
-              setFoldStatus={setFoldStatus}
-            /> */}
           </div>
           <div
             onMouseDown={() => foldMenu()}

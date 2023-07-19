@@ -3,7 +3,7 @@ import MobileMenu from "./MobileMenu";
 
 import greetings from "../../public/icons/hi.png";
 import company from "../../public/icons/office-building.png";
-import brain from "../../public/icons/brain.png";
+import brain from "../../public/icons/side-face.png";
 import location from "../../public/icons/location-pin.png";
 
 interface Props {
@@ -13,7 +13,9 @@ interface Props {
 export default function IntroCompany({ foldStatus, setFoldStatus }: Props) {
   return (
     <div>
-      <h3 className="text-lg font-bold text-black/70 px-2">아이티로그 회사 소개</h3>
+      <h3 className="text-lg font-bold text-black/70 px-2 tracking-tighter">
+        <span className="text-red-500">아이티로그</span> 회사 소개
+      </h3>
       <div className="grid grid-cols-4 gap-3 items-start justify-between w-full my-3">
         <MobileMenu
           menuIcon={greetings}

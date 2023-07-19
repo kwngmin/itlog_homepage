@@ -1,10 +1,17 @@
+"use client";
 import Link from "next/link";
 import React from "react";
 import help from "../../public/icons/chat.png";
 import connect from "../../public/icons/desktop.png";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 export default function HelpDesk() {
+  const router = useRouter();
+  const pageMove = (route: string) => {
+    router.push(route);
+  };
+
   return (
     <div className="my-60">
       <h1 className="leading-tight break-keep text-3xl sm:text-4xl font-bold tracking-tight">
@@ -41,10 +48,10 @@ export default function HelpDesk() {
           <a href={"mailto:ok@it-log.co.kr"}>ok@it-log.co.kr</a>
         </li>
       </ul>
-      <ul className="flex flex-col sm:flex-row my-8 gap-4 text-2xl font-medium tracking-tighter">
+      <ul className="hidden lg:flex my-8 gap-4 text-2xl font-medium tracking-tighter">
         <Link
           href={"http://helpu.kr/itlog/"}
-          className="flex h-20 sm:h-24 w-full bg-gray-100 md:hover:bg-red-500 ring ring-gray-200 md:hover:ring-0 rounded-xl items-center px-6 sm:px-10 select-none md:hover:text-white"
+          className="flex h-20 sm:h-24 w-full md:hover:bg-red-500 ring ring-gray-200 md:hover:ring-0 rounded-xl items-center px-6 sm:px-10 select-none md:hover:text-white"
           target="_blank"
         >
           <Image
@@ -56,9 +63,9 @@ export default function HelpDesk() {
           />
           원격지원
         </Link>
-        <Link
-          href={"/estimate"}
-          className="flex h-20 sm:h-24 w-full bg-gray-100 md:hover:bg-red-500 ring ring-gray-200 md:hover:ring-0 rounded-xl items-center px-6 sm:px-10 select-none md:hover:text-white"
+        <button
+          onMouseDown={() => pageMove("/estimate")}
+          className="flex h-20 sm:h-24 w-full md:hover:bg-red-500 ring ring-gray-200 md:hover:ring-0 rounded-xl items-center px-6 sm:px-10 select-none md:hover:text-white"
         >
           <Image
             src={help}
@@ -68,7 +75,7 @@ export default function HelpDesk() {
             className="mr-6 w-10 md:w-12 h-auto"
           />
           상담문의
-        </Link>
+        </button>
       </ul>
     </div>
   );
