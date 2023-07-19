@@ -9,7 +9,7 @@ export default function Solution() {
         <strong className="text-red-500">
           {" "}
           IoT{" "}
-          <span className="text-red-200 text-2xl font-normal">
+          <span className="text-red-300 text-2xl font-medium">
             _Internet of Things
           </span>{" "}
           <br />
