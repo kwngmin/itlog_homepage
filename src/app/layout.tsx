@@ -11,10 +11,11 @@ export const metadata: Metadata = {
   description:
     "(주)아이티로그 - 건설은안전하게,안전은스마트하게,건설안전관리의파트너",
   openGraph: {
-    title: "Next.js",
-    description: "The React Framework for the Web",
-    url: "https://nextjs.org",
-    siteName: "itlog - (주)아이티로그",
+    title: "itlog - (주)아이티로그",
+    description:
+      "(주)아이티로그 - 건설은안전하게,안전은스마트하게,건설안전관리의파트너",
+    url: "https://itlog-homepage.vercel.app/",
+    siteName: "itlog 홈페이지",
     images: [
       {
         url: "../../public/images/opengraph_800.png",
