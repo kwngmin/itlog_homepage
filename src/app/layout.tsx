@@ -16,19 +16,19 @@ export const metadata: Metadata = {
       "(주)아이티로그 - 건설은안전하게,안전은스마트하게,건설안전관리의파트너",
     url: "https://itlog-homepage.vercel.app/",
     siteName: "itlog 홈페이지",
-    images: [
-      {
-        url: "../../public/images/opengraph_800.png",
-        width: 800,
-        height: 600,
-      },
-      {
-        url: "../../public/images/opengraph_1600.png",
-        width: 1800,
-        height: 1600,
-        alt: "itlog logo",
-      },
-    ],
+    // images: [
+    //   {
+    //     url: "../../public/images/opengraph_800.png",
+    //     width: 800,
+    //     height: 600,
+    //   },
+    //   {
+    //     url: "../../public/images/opengraph_1600.png",
+    //     width: 1800,
+    //     height: 1600,
+    //     alt: "itlog logo",
+    //   },
+    // ],
     locale: "ko_KR",
     type: "website",
   },
@@ -51,7 +51,10 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
         />
         <meta name="format-detection" content="telephone=no" />
-        {/* <link rel="shortcut icon" href="../../public/favicon.ico" /> */}
+        <meta
+          property="og:image"
+          content="../../public/images/opengraph_800.png"
+        />
       </head>
       <body className={`flex flex-col h-screen relative`}>
         <Header />

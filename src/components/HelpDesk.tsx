@@ -17,7 +17,7 @@ export default function HelpDesk() {
       <h1 className="leading-tight break-keep text-3xl sm:text-4xl font-bold tracking-tight">
         고객센터
       </h1>
-      <div className="my-4">
+      <div className="mt-4 mb-6">
         <p className="text-2xl font-medium tracking-tighter mb-1">
           운영시간 09:00 - 18:00
         </p>

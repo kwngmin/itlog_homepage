@@ -15,6 +15,7 @@ import NewSafety from "@/components/NewSafety";
 import Instance from "@/components/Instance";
 import HelpDesk from "@/components/HelpDesk";
 import Solution from "@/components/Solution";
+import Reason from "@/components/Reason";
 
 export default function Home() {
   return (
@@ -28,7 +29,8 @@ export default function Home() {
         <NewSensors />
         <NewSafety />
         <NewBroadCast />
-        <CarouselSolution />
+        {/* <CarouselSolution /> */}
+        <Reason />
         <Instance />
         <HelpDesk />
       </BodyWrapper>
