@@ -25,7 +25,7 @@ export default function HelpDesk() {
           점심시간 12:00 - 13:00 (토/일/공휴일 휴무)
         </p>
       </div>
-      <ul className="flex flex-col sm:flex-row gap-4 md:gap-8 text-black/70">
+      <ul className="flex flex-col md:flex-row gap-4 md:gap-8 text-black/70">
         <li className="flex items-center">
           <div className="flex justify-center bg-gray-800 text-white font-medium w-8 h-8 rounded-full py-1 mr-2">
             T
