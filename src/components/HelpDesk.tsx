@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import React from "react";
-import help from "../../public/icons/chat.png";
+import help from "../../public/icons/calculator.png";
 import connect from "../../public/icons/desktop.png";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
@@ -51,7 +51,7 @@ export default function HelpDesk() {
       <ul className="hidden lg:flex my-8 gap-4 text-2xl font-medium tracking-tighter">
         <Link
           href={"http://helpu.kr/itlog/"}
-          className="flex h-20 sm:h-24 w-full md:hover:bg-red-500 ring ring-gray-200 md:hover:ring-0 rounded-xl items-center px-6 sm:px-10 select-none md:hover:text-white"
+          className="flex h-20 sm:h-24 w-full md:hover:bg-red-500 bg-gray-100 rounded-xl items-center px-6 sm:px-10 select-none md:hover:text-white"
           target="_blank"
         >
           <Image
@@ -65,7 +65,7 @@ export default function HelpDesk() {
         </Link>
         <button
           onMouseDown={() => pageMove("/estimate")}
-          className="flex h-20 sm:h-24 w-full md:hover:bg-red-500 ring ring-gray-200 md:hover:ring-0 rounded-xl items-center px-6 sm:px-10 select-none md:hover:text-white"
+          className="flex h-20 sm:h-24 w-full md:hover:bg-red-500 bg-gray-100 rounded-xl items-center px-6 sm:px-10 select-none md:hover:text-white"
         >
           <Image
             src={help}
