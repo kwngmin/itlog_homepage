@@ -2,8 +2,8 @@ import React from "react";
 
 export default function Solution() {
   return (
-    <div className="my-20 p-6 sm:px-12 py-16 rounded-2xl bg-gradient-to-br from-slate-100 to-red-50">
-      <h1 className="leading-tighter break-keep text-3xl sm:text-4xl font-bold tracking-tight">
+    <div className="my-20 p-8 sm:px-12 py-16 rounded-2xl bg-gradient-to-br from-slate-100 to-red-50">
+      <h1 className="leading-tighter break-keep text-2xl sm:text-4xl font-bold tracking-tight">
         Integrated
         <strong className="text-red-500"> IoT</strong> Solution
       </h1>
