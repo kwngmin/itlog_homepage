@@ -8,7 +8,11 @@ export default function Solution() {
         <br />
         <strong className="text-red-500">
           {" "}
-          IoT <br />
+          IoT{" "}
+          <span className="text-red-200 text-2xl font-normal">
+            _Internet of Things
+          </span>{" "}
+          <br />
         </strong>{" "}
         Solution
       </h1>
