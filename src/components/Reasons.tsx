@@ -15,7 +15,7 @@ export default function Reasons({ icon, title, text, iconCss }: Props) {
         src={icon}
         width={640}
         height={640}
-        className={`${iconCss} w-48 p-10 rounded-[3rem]`}
+        className={`${iconCss} w-32 p-6 rounded-[2rem] lg:w-48 lg:p-10 lg:rounded-[3rem]`}
       />
       <div className="">
         <h3 className="text-2xl md:text-3xl font-bold mb-4 sm:mb-4 md:mb-6 tracking-tight">
