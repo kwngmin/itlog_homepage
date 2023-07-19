@@ -14,6 +14,7 @@ import NewBroadCast from "@/components/NewBroadCast";
 import NewSafety from "@/components/NewSafety";
 import Instance from "@/components/Instance";
 import HelpDesk from "@/components/HelpDesk";
+import Solution from "@/components/Solution";
 
 export default function Home() {
   return (
@@ -21,12 +22,13 @@ export default function Home() {
       <MainFull />
       <BodyWrapper>
         <CardKnowHow />
-        <CarouselSolution />
+        <Solution />
         <NewGateSystem />
         <NewTowerSystem />
         <NewSensors />
         <NewSafety />
         <NewBroadCast />
+        <CarouselSolution />
         <Instance />
         <HelpDesk />
       </BodyWrapper>
