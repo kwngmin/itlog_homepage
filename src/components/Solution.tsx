@@ -3,17 +3,12 @@ import React from "react";
 export default function Solution() {
   return (
     <div className="my-20 p-10 sm:px-12 py-16 rounded-3xl bg-gradient-to-br from-slate-100 to-red-50">
-      <h1 className="sm:hidden leading-tighter break-keep text-3xl font-bold tracking-tight">
+      <h1 className="sm:hidden leading-tight break-keep text-3xl font-bold tracking-tight">
         Integrated
         <br />
-        <strong className="text-red-500">
-          {" "}
-          IoT
-          <br />
-        </strong>{" "}
-        Solution
+        <strong className="text-red-500"> IoT</strong> Solution
       </h1>
-      <h1 className="hidden sm:block leading-tighter break-keep text-4xl font-bold tracking-tight">
+      <h1 className="hidden sm:block leading-tight break-keep text-4xl font-bold tracking-tight">
         Integrated
         <strong className="text-red-500"> IoT</strong> Solution
       </h1>
