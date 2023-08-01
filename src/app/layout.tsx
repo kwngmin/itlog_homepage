@@ -56,7 +56,7 @@ export default function RootLayout({
           content="../../public/images/opengraph_800.png"
         />
       </head>
-      <body className={`flex flex-col h-screen relative`}>
+      <body className={`fixed flex flex-col h-screen w-full`}>
         <Header />
         <MainWrapper>
           {children}
